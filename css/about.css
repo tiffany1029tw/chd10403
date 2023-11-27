@@ -5,14 +5,12 @@ body {
     width: 100%;
 }
 
-.bg_store1 {
+/* .bgc {
     margin: auto;
     max-width: 1920px;
     width: 100%;
-    background-image: url(../img/bg_1.png);
-    background-position: right bottom ;
-    background-repeat: no-repeat;
-}
+    background-color: rgba(245, 239, 233, 1);
+} */
 
 .header {
     width: 100%;
@@ -39,17 +37,35 @@ body {
     align-items: center;
 }
 
+.header .nav_list li {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* height: 30px; */
+    /* padding: 40px; */
+}
+
 .nav_list li a {
+    display: block;
+    width: 100%;
+    height: 100%;
     color: white;
     text-align: center;
     font-size: 24px;
     text-decoration: none;
     letter-spacing: 1px;
     font-family: 'Noto Serif TC', serif;
+    padding: 43px ;
+}
+
+.nav_list li a:hover{
+    background-color: white;
+    color: hsl(37, 34%, 72%);
 }
 
 .header .icons {
     display: flex;
+    margin-right: 20px;
 }
 
 .header .icons img {

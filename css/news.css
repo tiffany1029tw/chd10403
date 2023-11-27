@@ -5,14 +5,12 @@ body {
     width: 100%;
 }
 
-.bg_store1 {
+/* .bgc {
     margin: auto;
     max-width: 1920px;
     width: 100%;
-    background-image: url(../img/bg_1.png);
-    background-position: right bottom ;
-    background-repeat: no-repeat;
-}
+    background-color: rgba(245, 239, 233, 1);
+} */
 
 .header {
     width: 100%;
@@ -39,21 +37,173 @@ body {
     align-items: center;
 }
 
+.header .nav_list li {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* height: 30px; */
+    /* padding: 40px; */
+}
+
 .nav_list li a {
+    display: block;
+    width: 100%;
+    height: 100%;
     color: white;
     text-align: center;
     font-size: 24px;
     text-decoration: none;
     letter-spacing: 1px;
     font-family: 'Noto Serif TC', serif;
+    padding: 43px ;
+}
+
+.nav_list li a:hover{
+    background-color: white;
+    color: hsl(37, 34%, 72%);
 }
 
 .header .icons {
     display: flex;
+    margin-right: 20px;
 }
 
 .header .icons img {
     padding: 0 6px;
+}
+
+/* ------------------*/
+
+.sale .sale2 {
+    display: flex;
+    margin: 100px 0px 100px 0px;
+}
+
+.sale .sale2 .sale_title{
+    position: relative
+}
+
+.sale .sale2 .sale_title > p{
+    position: absolute;
+    font-size: 32px;
+    color: white;
+    font-family: 'Noto Serif TC', serif;
+    top: 90px;
+    right: 220px;
+}
+
+.sale_card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    margin-bottom: 50px;
+}
+
+.sale_card .sc_1 , .sc_2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0px;
+    gap: 50px;
+    align-items: center;
+}
+
+.sale_card .title{
+    font-size: 24px;
+    color:rgba(78, 56, 27, 1);
+    font-family: 'Noto Serif TC', serif;
+    letter-spacing: 2px;
+    padding: 20px 0px;
+    border-bottom: 1px solid black;
+}
+
+.sale_card .main{
+    font-size: 20px;
+    color:rgba(78, 56, 27, 1);
+    font-family: 'Noto Sans TC', serif;
+    letter-spacing: 1px;
+    line-height: 1.8;
+    margin: 20px 0px;
+}
+
+/* ---------------------- */
+
+.knowledges .knowledges2 {
+    display: flex;
+}
+
+.knowledges .knowledges2 .kl_title{
+    position: relative
+}
+
+.knowledges .knowledges2 .kl_title > p{
+    position: absolute;
+    font-size: 32px;
+    color: white;
+    font-family: 'Noto Serif TC', serif;
+    top: 90px;
+    right: 220px;
+}
+
+.kl_card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    margin-bottom: 50px;
+    margin-left: 150px;
+}
+
+.kl_card .kl_1 , .kl_2 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0px;
+    gap: 50px;
+    align-items: center;
+}
+
+.kl_card .title{
+    font-size: 24px;
+    color:rgba(78, 56, 27, 1);
+    font-family: 'Noto Serif TC', serif;
+    letter-spacing: 2px;
+    padding: 20px 0px;
+    border-bottom: 1px solid black;
+}
+
+.kl_card .main{
+    font-size: 20px;
+    color:rgba(78, 56, 27, 1);
+    font-family: 'Noto Sans TC', serif;
+    letter-spacing: 1px;
+    line-height: 1.8;
+    margin: 20px 0px;
+}
+
+/* ----------------------------- */
+
+.page_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 100px;
+}
+
+.page_btn button {
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgba(207, 191, 168, 1);
+    margin: auto;
+}
+
+.page_btn p {
+    color: rgba(78, 56, 27, 1);
+    font-size: 20px;
+    font-family: 'Noto Serif TC', serif;
+    text-align: center;
 }
 
 /* ------------------*/

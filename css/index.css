@@ -65,6 +65,7 @@ body {
 
 .header .icons {
     display: flex;
+    margin-right: 20px;
 }
 
 .header .icons img {
@@ -270,6 +271,7 @@ body {
 
 .recommend_product .rp_button {
     text-align: right;
+    margin-right: 10px;
 }
 
 .recommend_product .but_read_more {
@@ -372,6 +374,7 @@ body {
 
 .hot_sales .hs_main .hs_button_left {
     position: relative;
+    margin-right: -20px;
 }
 
 .hot_sales .hs_main .hs_button_left .point {
@@ -390,6 +393,7 @@ body {
 
 .hot_sales .hs_main .hs_button_right {
     position: relative;
+    margin-left: -20px;
 }
 
 .hot_sales .hs_main .hs_button_right .point {
@@ -591,5 +595,6 @@ body {
     margin: 50px 0px 0px 0px;
     font-size: 16px;
     text-align: center;
+    letter-spacing: 1px;
     color: white;
 }

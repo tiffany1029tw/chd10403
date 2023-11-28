@@ -1,0 +1,14 @@
+.breadcrumb {
+    display: flex;
+    list-style: none;
+    margin: auto;
+}
+
+.breadcrumb ul li a {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.breadcrumb ul li+li:before {
+    content:'>';
+}

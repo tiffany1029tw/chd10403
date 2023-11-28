@@ -50,27 +50,12 @@
     margin: 30px;
 }
 
-.prd_category .prd_top .prd_c1 > a {
+.prd_category .prd_top a {
     display: block;
     text-decoration: none;
 }
 
-.prd_category .prd_top .prd_c2 > a {
-    display: block;
-    text-decoration: none;
-}
-
-.prd_category .prd_top .prd_c3 > a {
-    display: block;
-    text-decoration: none;
-}
-
-.prd_category .prd_bottom .prd_c4 > a {
-    display: block;
-    text-decoration: none;
-}
-
-.prd_category .prd_bottom .prd_c5 > a {
+.prd_category .prd_bottom a {
     display: block;
     text-decoration: none;
 }

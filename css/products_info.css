@@ -19,6 +19,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    background-image: url(../img/info_5.png) , url(../img/info_2.png);
+    background-position: right top ;
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 
 .main_top .top_dtl {
@@ -129,6 +133,10 @@
 .main_center {
     width: 1200px;
     margin: auto;
+    background-image: url(../img/info.png) , url(../img/info_3.png) ;
+    background-position: left ;
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 
 .main_center .item {

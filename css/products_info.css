@@ -1,7 +1,7 @@
 .breadcrumb {
     display: flex;
     list-style: none;
-    margin: auto;
+    margin: 100px 0px 100px 50px;
 }
 
 .breadcrumb ul li a {
@@ -11,4 +11,257 @@
 
 .breadcrumb ul li+li:before {
     content:'>';
+}
+
+/* -------------------- */
+
+.main_top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.main_top .top_dtl {
+    margin-bottom: 50px;
+}
+
+.main_top .top_img {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-right: -200px;
+}
+
+.main_top .top_img .big_img {
+    margin: 10px;
+}
+
+.main_top .top_img .small_img img {
+    padding: 10px ;
+}
+
+.main_top .top_dtl .dtl_txt .pd_name {
+    font-size: 30px;
+    font-family: 'Noto Serif TC', serif;
+    text-align: center;
+    color: rgba(78, 56, 27, 1);
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.main_top .top_dtl .dtl_txt .gp1 , .gp2 {
+    font-size: 20px;
+    font-family: 'Noto Serif TC', serif;
+    text-align: center;
+    color: rgba(37, 25, 10, 1);
+    margin: 20px 0px;
+    letter-spacing: 1px;
+}
+
+.main_top .top_dtl .dtl_txt2 .detail {
+    font-size: 20px;
+    font-family: 'Noto Sans TC', serif;
+    text-align: left;
+    color: rgba(37, 25, 10, 1);
+    border-top: 1px solid rgba(78, 56, 27, 0.5);
+    border-bottom: 1px solid rgba(78, 56, 27, 0.5);
+    padding: 30px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.main_top .dtl_buy label {
+    font-size: 20px;
+    font-family: 'Noto Serif TC', serif;
+    text-align: left;
+    color: rgba(37, 25, 10, 1);
+}
+
+.main_top .dtl_buy .spec , .count {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px 0px;
+    padding: 0px 30px;
+}
+
+.main_top .dtl_buy .spec .btn1 , .btn2 {
+    width: 120px;
+    height: 60px;
+    border: none;
+    color: rgba(78, 56, 27, 1);
+    background-color: rgba(207, 191, 168, 1);
+    font-size: 20px;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.main_top .dtl_buy .count select {
+    width: 260px;
+    height: 60px;
+    color: rgba(78, 56, 27, 1);
+    background-color: rgba(207, 191, 168, 1);
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.main_top .dtl_buy .cart_btn #cart{
+    width: 380px;
+    height: 85px;
+    background-color: rgba(163, 138, 98, 1);
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Noto Serif TC', serif;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 20px;
+    margin: 10px 0px 0px 30px;
+}
+
+/* --------------------------- */
+
+.main_center {
+    width: 1200px;
+    margin: auto;
+}
+
+.main_center .item {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.main_center .item .pic {
+    width: 50%;
+    flex-shrink: 0;
+}
+
+.main_center .item .pic img{
+    width: 100%;
+}
+
+.main_center .item > :first-child {
+    margin-right: -10%;
+}
+
+.main_center .txt:nth-child(1) {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.main_center .txt:nth-child(2) {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: rgba(78, 56, 27, 1);
+}
+
+.main_center .item .txt {
+    width: 50%;
+    flex-shrink: 0;
+    padding: 50px 30px;
+    position: relative;
+    z-index: 1;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.main_center .item .txt p {
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    line-height: 2;
+    text-align: center;
+    font-family: 'Noto Serif TC', serif;
+}
+
+.main_center .last {
+    display: flex;
+    margin: 50px 0px 80px 0px;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.main_center .last img {
+    width: 650px;
+    height: 740px;
+}
+
+.last .txt3 {
+    color: rgba(37, 25, 10, 1);
+    font-size: 20px;
+    letter-spacing: 2;
+    line-height: 2;
+    font-family: 'Noto Sans TC', serif;
+}
+
+/* --------------------- */
+
+h1 {
+    font-size: 32px;
+    text-align: center;
+    font-family: 'Noto Serif TC', serif;
+    letter-spacing: 1.5px;
+    color: rgba(78, 56, 27, 1);
+}
+
+.more {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px 30px 10px
+}
+
+.pd_card {
+    margin: 10px 30px 30px 30px;
+}
+
+.pd_card a {
+    text-decoration: none;
+}
+
+.pd_card .pd_img{
+    width: 100%;
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
+
+.pd_card .pd_tdl .name {
+    font-size: 20px;
+    color: rgba(37, 25, 10, 1);
+    font-family: 'Noto Serif TC', serif;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 20px 0px;
+}
+
+.pd_card .pd_tdl .price {
+    font-size: 20px;
+    color: rgba(154, 95, 0, 1);
+    font-family: 'Noto Serif TC', serif;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 10px 0px 20px 0px;
+}
+
+.pd_card button {
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    border: 0;
+    background-color: rgba(163, 138, 98, 1);
+    color: white;
+    font-size: 20px;
+    font-family: 'Noto Serif TC', serif;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+.pd_card button:hover {
+    background-color: white;
+    color: rgba(163, 138, 98, 1);
 }

@@ -117,13 +117,13 @@
     text-decoration: none;
 }
 
-.main_cans .pd_card .pd_img{
+.pd_card .pd_img{
     width: 100%;
     vertical-align: middle;
     margin-bottom: 10px;
 }
 
-.pd_card .pd_tdl .name {
+.main_cans .pd_card .pd_tdl .name {
     font-size: 20px;
     color: rgba(37, 25, 10, 1);
     font-family: 'Noto Serif TC', serif;

@@ -1,0 +1,149 @@
+.login_bg {
+    max-width: 1920px;
+    width: 100%;
+    background-image: url(../img/login2.png), url(../img/login1.png), url(../img/login4.png), url(../img/login3.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: left center , right top , right center , left bottom;
+}
+
+.login_title {
+    display: flex;
+    margin: 100px 0px 80px 0px;
+}
+
+.login_title .title{
+    position: relative
+}
+
+.login_title .title > p{
+    position: absolute;
+    font-size: 32px;
+    color: white;
+    font-family: 'Noto Serif TC', serif;
+    top: 90px;
+    right: 220px;
+}
+
+/* ------------ */
+
+.login_main {
+    width: 50%;
+    height: 700px;
+    background-color: rgba(229, 219, 206, 1);
+    margin: auto;
+    padding-top: 3%;
+    margin-bottom: 130px;
+}
+
+.login_main label{
+    font-size: 20px;
+    color: rgba(37, 25, 10, 1);
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: 'Noto Serif TC', serif;
+    margin-right: 5px;
+}
+
+.login_main input {
+    border: none;
+}
+
+.login_main .user_account , .user_password , .forget_psw , .sign_up {
+    margin: 30px 75px;
+}
+
+.login_main .login_btn , .sign_btn {
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.login_main .user_account input {
+    width: 700px;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 24px;
+    color: rgba(37, 25, 10, 1);
+    letter-spacing: 1px;
+    font-family: 'Noto Serif TC', serif;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.login_main .user_password input {
+    width: 700px;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 24px;
+    color: rgba(37, 25, 10, 1);
+    letter-spacing: 1px;
+    font-family: 'Noto Serif TC', serif;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.login_main .login_btn input {
+    width: 500px;
+    height: 70px;
+    background-color: rgba(78, 56, 27, 1);
+    font-size: 24px;
+    color: white;
+    letter-spacing: 1px;
+    font-family: 'Noto Serif TC', serif;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.login_main .login_btn input:hover {
+    background-color: white;
+    color: rgba(78, 56, 27, 1);
+}
+
+.login_main .forget_psw {
+    border-bottom: 1px solid rgba(78, 56, 27, 0.5);
+    padding-bottom: 30px;
+}
+
+.login_main .forget_psw a {
+    display: block;
+    width: 150px;
+    text-decoration: none;
+    margin: auto;
+}
+
+.login_main .forget_psw p{
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: rgba(78, 56, 27, 1);
+    font-family: 'Noto Serif TC', serif;
+    text-align: center;
+}
+
+.login_main .forget_psw p:hover{
+    color: white;
+}
+
+.login_main .sign_up p {
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: rgba(78, 56, 27, 1);
+    font-family: 'Noto Serif TC', serif;
+    text-align: center;
+}
+
+.login_main .sign_btn input {
+    width: 500px;
+    height: 70px;
+    color: white;
+    font-size: 24px;
+    background-color: rgba(78, 56, 27, 0.5);
+    letter-spacing: 1px;
+    font-family: 'Noto Serif TC', serif;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.login_main .sign_btn input:hover {
+    color: rgba(78, 56, 27, 1);
+    background-color: white;
+}

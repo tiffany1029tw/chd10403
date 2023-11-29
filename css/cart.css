@@ -523,3 +523,28 @@
     color:rgba(163, 138, 98, 1);
     background-color: white;
 }
+
+.btn_btt {
+    position: relative;
+    text-align: right;
+    right: 30px;
+}
+
+.btn_btt a {
+    text-decoration: none;
+    width: 200px;
+}
+
+.btn_btt .btt {
+    border: 0;
+    border-radius: 10px ;
+    width: 200px;
+    height: 60px;
+    background-color: rgba(207, 191, 168, 0.6);
+    font-size: 18px;
+    color: rgba(78, 56, 27, 1);
+    font-family: 'Noto Sans TC', sans-serif;
+    /* writing-mode: vertical-lr; */
+    text-align: center;
+    margin-bottom: 100px;
+}

@@ -7,6 +7,22 @@
     background-position: right top, right top, left center, left bottom;
 }
 
+.prd_bottom img {
+    transition: transform 0.3s;
+}
+
+.prd_top img {
+    transition: transform 0.3s;
+}
+
+.prd_top img:hover {
+    transform: scale(1.1);
+}
+
+.prd_bottom img:hover {
+    transform: scale(1.1);
+}
+
 .products .products2 {
     display: flex;
     margin: 100px 0px 100px 0px;

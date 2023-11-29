@@ -1,15 +1,38 @@
-.breadcrumb {
-    display: flex;
-    list-style: none;
-    margin: 100px 0px 100px 50px;
+.wrap {
+    padding: 50px 30px;
+    margin-bottom: 50px;
 }
 
-.breadcrumb ul li a {
+.breadcrumb {
+    width: 90%;
+    display: flex;
+    margin: auto;
+    /* margin: 100px 0px 100px 50px; */
+}
+
+.breadcrumb li {
+    padding: 0px 20px;
+    list-style: none;
+}
+
+.breadcrumb a {
     text-decoration: none;
     font-size: 20px;
+    color:rgba(207, 191, 168, 1);
+    font-family: 'Noto Serif TC', serif;
+    padding-left: 10px;
 }
 
-.breadcrumb ul li+li:before {
+.breadcrumb a:hover ,
+.breadcrumb li:last-child a {
+    color: rgba(78, 56, 27, 1);
+}
+
+.breadcrumb li + li {
+    padding-left: 0;
+}
+
+.breadcrumb li + li:before {
     content:'>';
 }
 

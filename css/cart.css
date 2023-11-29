@@ -1,0 +1,525 @@
+.nav_bg {
+    max-width: 1920px;
+    width: 100%;
+    background-image: url(../img/cart2.png), url(../img/cart1.png), url(../img/cart4.png), url(../img/cart3.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: right top , left top , left top , left;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 189px;
+}
+
+.nav .buywhat , .info , .done {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    margin: 0px 10px;
+    border-radius: 20px;
+}
+
+.nav p {
+    font-size: 24px;
+    color: rgba(37, 25, 10, 1);
+    font-family: 'Noto Serif TC', serif;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* --------------------- */
+
+.cart {
+    max-width: 1920px;
+}
+
+.cart_nav {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(163, 153, 128, 1);
+    margin: 80px 0px 50px 0px;
+}
+
+.cart_nav p {
+    font-size: 32px;
+    font-family: 'Noto Serif TC', serif;
+    color: white;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 30px;
+}
+
+/* --------- */
+
+.cart_main {
+    max-width: 1920px;
+}
+
+.cart_main .items {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 180px;
+    margin: 60px 0px;
+    padding: 20px 0px;
+    border-bottom: 1px solid rgba(78, 56, 27, 0.2) ;
+}
+
+.cart_main .items .all {
+    margin-left: 180px;
+}
+
+.cart_main .items .pd_name {
+    margin-left: 110px;
+}
+
+.cart_main .items .count {
+    margin-left: 150px;
+}
+
+.cart_main .items .price {
+    margin-left: 40px;
+}
+
+.cart_main .items p {
+    font-size: 20px;
+    font-family: 'Noto Serif TC', serif;
+    color:rgba(37, 25, 10, 1);
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.cart_main .items button {
+    display: none;
+}
+
+/* ----------------------- */
+
+.cart_main .dtls {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 50px 0px 60px 0px;
+}
+
+.dtls input[type="checkbox"] {
+    display: none;
+}
+
+.dtls input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.dtls input[type="checkbox"] + label::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgba(163, 138, 98, 1);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.dtls input[type="checkbox"]:checked + label::before {
+    background-color: rgba(163, 138, 98, 0.5);
+    content: "✔";
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+}
+
+/* --------------- */
+
+.dtls input[type="checkbox"] {
+    /* display: none; */
+}
+
+.dtls input[type="checkbox"] + label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.dtls input[type="checkbox"] + label::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgba(163, 138, 98, 1);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.dtls input[type="checkbox"]:checked + label::before {
+    background-color: rgba(163, 138, 98, 0.5);
+    content: "✔";
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+}
+
+/* ------------------- */
+
+.dtls p {
+    color: black;
+    font-size: 18px;
+    font-family: 'Noto Serif TC', serif;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.dtls select {
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    border: 1px solid  rgba(163, 138, 98, 0.5);;
+    border-radius: 10px;
+    font-family: 'Noto Serif TC', serif;
+    text-align: center;
+    color:rgba(37, 25, 10, 1);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.dtls .pd_info {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+.dtls .cancel {
+    width: 35px;
+    height: 35px;
+    border: none;
+    background-color: rgba(207, 191, 168, 0.5);
+    border-radius: 10px;
+}
+
+/* ---------------- */
+
+.total_wrap {
+    max-width: 1920px;
+    margin-top: 100px;
+    border-top: 1px solid rgba(78, 56, 27, 0.2) ;
+}
+
+.total2 {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: 30px 160px 50px 0px;
+}
+
+.total2 .total_txt , .total_price {
+    margin: 0px 20px 30px 20px;
+}
+
+.total2 p {
+    color: black;
+    font-size: 20px;
+    font-family: 'Noto Serif TC', serif;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/* ---------------------- */
+
+.main_add {
+    border-bottom: 1px solid rgba(78, 56, 27, 0.2) ;
+    margin-bottom: 100px;
+}
+
+.add_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(163, 153, 128, 1);
+    margin-bottom: 80px;
+}
+
+.add_txt p {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: 'Noto Serif TC', serif;
+}
+
+.add_pds {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.pd_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 30px 30px 30px;
+}
+
+.pd_card a {
+    text-decoration: none;
+}
+
+.pd_card .pd_img{
+    width: 100%;
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
+
+.pd_card .pd_tdl .name {
+    font-size: 20px;
+    color: rgba(37, 25, 10, 1);
+    font-family: 'Noto Serif TC', serif;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 20px 0px;
+}
+
+.pd_card .pd_tdl .price {
+    font-size: 20px;
+    color: rgba(154, 95, 0, 1);
+    font-family: 'Noto Serif TC', serif;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 10px 0px 20px 0px;
+}
+
+.pd_card button {
+    width: 250px;
+    height: 60px;
+    border-radius: 10px;
+    border: 0;
+    background-color: rgba(163, 138, 98, 1);
+    color: white;
+    font-size: 20px;
+    font-family: 'Noto Serif TC', serif;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+}
+
+.pd_card button:hover {
+    background-color: white;
+    color: rgba(163, 138, 98, 1);
+}
+
+.rp_button {
+    text-align: right;
+    margin-right: 150px;
+    margin-bottom: 60px;
+}
+
+.but_read_more {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: rgba(78, 56, 27, 1);
+    border:0;
+    border-radius: 10px;
+    background-color:rgba(207, 191, 168, 1);
+    width: 250px;
+    height: 60px;
+}
+
+.but_read_more:hover {
+    color:rgba(207, 191, 168, 1);
+    background-color: rgba(78, 56, 27, 1);
+}
+
+/* ----------------------- */
+
+.order_info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.way {
+    width: 50%;
+    height: 750px;
+    background-color: rgba(163, 138, 98, 0.3);
+}
+
+.way .way_title {
+    font-size: 20px;
+    text-align: center;
+    color: rgba(37, 25, 10, 1);
+    font-family: 'Noto Serif TC', serif;
+    letter-spacing: 1px;
+    margin: 30px 0px;
+}
+
+.way .way_del {
+    border-top: 1px solid rgba(78, 56, 27, 0.2) ;
+    padding-top: 30px;
+}
+
+.way .way_del , .way_pay {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 20px;
+    text-align: left;
+    color: rgba(37, 25, 10, 1);
+    font-family: 'Noto Serif TC', serif;
+    letter-spacing: 1px;
+    margin: 20px 0px 20px 30px;
+}
+
+.way select {
+    width: 520px;
+    height: 50px;
+    background-color: rgba(245, 239, 233, 1);
+    border: none;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.way .way_del select {
+    font-size: 20px;
+    text-align: center;
+    color: rgba(37, 25, 10, 1);
+    font-family: 'Noto Serif TC', serif;
+    letter-spacing: 1px;
+}
+
+.way .way_pay select {
+    font-size: 20px;
+    text-align: center;
+    color: rgba(37, 25, 10, 1);
+    font-family: 'Noto Serif TC', serif;
+    letter-spacing: 1px;
+}
+
+.way .way_pay {
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(78, 56, 27, 0.2) ;
+}
+
+.way .attention {
+    width: 100%;
+}
+
+.way .attention ul {
+    font-size: 18px;
+    color: rgba(37, 25, 10, 1);
+    font-family: 'Noto Sans TC', serif;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin: 30px 30px;
+    list-style-type: disc;
+}
+
+.way .attention ul li {
+    margin: 20px;
+}
+
+/* --------------------- */
+
+.order_dtl {
+    width: 25%;
+    height: 750px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.order_dtl .order_title {
+    font-size: 20px;
+    text-align: center;
+    color: rgba(37, 25, 10, 1);
+    font-family: 'Noto Serif TC', serif;
+    letter-spacing: 1px;
+    margin: 30px 0px;
+}
+
+.money {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    text-align: center;
+    color: rgba(37, 25, 10, 1);
+    font-family: 'Noto Serif TC', serif;
+    letter-spacing: 1px;
+}
+
+.money1, .bonus, .fare, .order_total, .end {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15%;
+    margin-top: 8%;
+}
+
+.use {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10%;
+    margin-left: 15%;
+}
+
+.use #bonus_use {
+    width: 240px;
+    height: 50px;
+    border: none;
+    background-color: rgba(163, 138, 98, 1);
+    font-size: 20px;
+    font-family: 'Noto Serif TC', serif;
+}
+
+.use .enter {
+    border: none;
+    width: 80px;
+    height: 50px;
+    background-color: rgba(207, 191, 168, 1);
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Noto Serif TC', serif;
+    margin-left: 5px;
+}
+
+.money1 .p2,
+.bonus .p2,
+.fare .p2,
+.order_total .p2 {
+    padding-right: 80px;
+}
+
+.end #end {
+    border: none;
+    width: 80%;
+    height: 80px;
+    background-color:rgba(163, 138, 98, 1);
+    border-radius: 10px;
+    font-size: 24px;
+    color: white;
+    font-family: 'Noto Serif TC', serif;
+}
+
+.end #end:hover{
+    color:rgba(163, 138, 98, 1);
+    background-color: white;
+}

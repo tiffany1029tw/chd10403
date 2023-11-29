@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>喵物購物車</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/cart.css">
+
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <a href="index.html"><img src="img/logo2.png" alt="logo"></a>
+        </div>
+        <ul class="nav_list">
+            <li class="about">
+                <a href="about.html">關於喵物</a>
+            </li>
+            <li class="products">
+                <a href="products.html">商品分類</a>
+            </li>
+            <li class="news">
+                <a href="news.html">最新消息</a>
+            </li>
+            <li class="faq">
+                <a href="">常見問題</a>
+            </li>
+            <li class="contact">
+                <a href="">聯絡我們</a>
+            </li>
+            <div class="icons">
+                <div class="search">
+                    <img src="img/search_icon.png" alt="search">
+                </div>
+                <div class="cart">
+                    <a href="">
+                        <img src="img/cart_icon.png" alt="cart">
+                    </a>
+                </div>
+                <div class="mem">
+                    <a href="">
+                        <img src="img/mem_icon.png" alt="mem">
+                    </a>
+                </div>
+            </div>
+        </ul>
+    </div>
+
+    <!-- -----------最上方-------- -->
+
+<div class="nav_bg"></div>
+
+    <div class="nav">
+        <div class="buywhat">
+            <p>購物車內容</p>
+        </div>
+        <div class="point">
+            <img src="img/point.png" alt="箭頭">
+        </div>
+        <div class="info">
+            <p>填寫訂單資訊</p>
+        </div>
+        <div class="point">
+            <img src="img/point.png" alt="箭頭">
+        </div>
+        <div class="done">
+            <p>訂單確認</p>
+        </div>
+    </div>
+
+    <!-- -----------購物車內容--------- -->
+
+    <div class="cart">
+
+        <div class="cart_nav">
+            <p>購物車明細</p>
+        </div>
+
+        <div class="cart_main">
+
+            <div class="items">
+                <div class="all">
+                    <p>全選</p>
+                </div>
+                <div class="pd_name">
+                    <p>商品資訊</p>
+                </div>
+                <div class="count">
+                    <p>數量</p>
+                </div>
+                <div class="price">
+                    <p>單件價格</p>
+                </div>
+                <div class="total">
+                    <p>小計</p>
+                </div>
+                <div class="cancel">
+                    <button class="cancel_all"></button>
+                </div>
+            </div>
+
+            <div class="dtls">
+                <div class="checkbox">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox"></label>
+                </div>
+                <div class="pd_info">
+                    <div class="pd_pic">
+                        <img src="img/cart_pdpic.png" alt="商品圖">
+                    </div>
+                    <div class="pd_name1">
+                        <p>成貓主食罐 鱸魚雞 85g</p>
+                    </div>
+                </div>
+                <div class="count1">
+                    <select name="count1" id="count1">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <div class="price1">
+                    <p>NT$65</p>
+                </div>
+                <div class="total1">
+                    <p>NT$195</p>
+                </div>
+                <div class="cancel_btn">
+                    <button class="cancel" value="">X</button>
+                </div>
+            </div>
+
+            <div class="dtls">
+                <div class="checkbox2">
+                    <input type="checkbox" id="checkbox2">
+                    <label for="checkbox2"></label>
+                </div>
+                <div class="pd_info">
+                    <div class="pd_pic">
+                        <img src="img/cart_pdpic.png" alt="商品圖">
+                    </div>
+                    <div class="pd_name1">
+                        <p>成貓主食罐 鱸魚雞 85g</p>
+                    </div>
+                </div>
+                <div class="count1">
+                    <select name="count1" id="count1">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </div>
+                <div class="price1">
+                    <p>NT$65</p>
+                </div>
+                <div class="total1">
+                    <p>NT$195</p>
+                </div>
+                <div class="cancel_btn">
+                    <button class="cancel" value="">X</button>
+                </div>
+            </div>
+
+            <div class="total_wrap">
+                <div class="total2">
+                    <div class="total_txt">
+                        <p>合計</p>
+                    </div>
+                    <div class="total_price">
+                        <p>NT$260</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------加購品------------- -->
+
+    <div class="main_add">
+
+        <div class="add_item">
+            <div class="add_txt">
+                <p>人氣加購品</p>
+            </div>
+        </div>
+
+        <div class="add_pds">
+            <div class="pd_card">
+                <a href="">
+                    <div class="pd_img">
+                        <img src="img/panda.png" alt="加購品圖一">
+                    </div>
+                    <div class="pd_tdl">
+                        <p class="name">Maowoo 熊貓玩具</p>
+                        <p class="price">NT$129</p>
+                    </div>
+                </a>
+                <button>加入購物車</button>
+            </div>
+
+            <div class="pd_card">
+                <a href="">
+                    <div class="pd_img">
+                        <img src="img/monkey.png" alt="加購品圖二">
+                    </div>
+                    <div class="pd_tdl">
+                        <p class="name">Maowoo 猩猩玩具</p>
+                        <p class="price">NT$129</p>
+                    </div>
+                </a>
+                <button>加入購物車</button>
+            </div>
+
+            <div class="pd_card">
+                <a href="">
+                    <div class="pd_img">
+                        <img src="img/lion.png" alt="加購品圖三">
+                    </div>
+                    <div class="pd_tdl">
+                        <p class="name">Maowoo 獅子玩具</p>
+                        <p class="price">NT$129</p>
+                    </div>
+                </a>
+                <button>加入購物車</button>
+            </div>
+        </div>
+
+        <div class="rp_button">
+            <a href="products_food.html">
+                <input type="button" class="but_read_more" value="查看更多商品 >">
+            </a>
+        </div>
+    </div>
+
+<!-- ------------------- -->
+
+    <div class="order_info">
+        <div class="way">
+            <div class="way_title">
+                <p>選擇配送方式及付款方式</p>
+            </div>
+            <div class="way_del">
+                <p>配送方式</p>
+                <select name="" id="delivery">
+                    <option value="超商取貨">超商取貨</option>
+                    <option value="新竹物流">新竹物流</option>
+                    <option value="實體門市取件">實體門市取件</option>
+                </select>
+            </div>
+            <div class="way_pay">
+                <p>付款方式</p>
+                <select name="" id="pay">
+                    <option value="超商取貨付款">超商取貨付款</option>
+                    <option value="信用卡付款">信用卡付款</option>
+                    <option value="匯款轉帳">匯款轉帳</option>
+                </select>
+            </div>
+            <div class="attention">
+                <ul class="att_list">
+                    <li><p>超商取貨訂單：下單日隔日安排出貨（例假日除外）出貨後約2-3日會配達指定門市，商品配達門市後系統會發送簡訊通知，請於取貨期限內完成取件</p></li>
+                    <li><p>若未收到取貨簡訊，請確認手機電信公司是否有開啟阻擋廣告簡訊功能或手機號碼輸入是否正確...等，以避免逾期未取的狀況（單次逾期未取即會紀錄，並加入會員黑名單）</p></li>
+                    <li><p>宅配訂單：下單日隔日安排出貨（例假日除外）配送時程依照物流安排為主，若需急件請先聯繫客服為您確認</p></li>
+                    <li><p>若收到商品時外包裝有損壞，請錄影存留，並請於第一時間聯繫客服</p></li>
+                    <li><p>若有任何疑問請盡快聯繫我們！謝謝</p></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="order_dtl">
+            <div class="order_title">
+                <p>訂單資訊</p>
+            </div>
+            <div class="money">
+                <div class="money1">
+                    <p>小計</p>
+                    <p class="p2">NT$195</p>
+                </div>
+                <div class="bonus">
+                    <p>折抵購物金</p>
+                    <p class="p2">-NT$50</p>
+                </div>
+                <div class="use">
+                    <input type="number" id="bonus_use">
+                    <input type="button" class="enter" value="確定">
+                </div>
+                <div class="fare">
+                    <p>運費</p>
+                    <p class="p2">NT$55</p>
+                </div>
+                <div class="order_total">
+                    <p>合計總金額</p>
+                    <p class="p2">NT$200</p>
+                </div>
+                <div class="end">
+                    <input type="button" id="end" value="結帳">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="contact">
+            <div class="ct_title">
+                <p>聯絡我們</p>
+                <hr>
+            </div>
+            <div class="ct_dtl">
+                <p>
+                營業時間：周一至周六 10:00-18:00<br>
+                客服電話：02-2498-1764<br>
+                E-mail: tiffany1029tw@gmail.com<br>
+                </p>
+            </div>
+        </div>
+        <div class="follow">
+            <div class="fw_title">
+                <p>追蹤我們</p>
+                <hr>
+            </div>
+            <div class="fw_icons">
+                <div class="ig_icon">
+                    <a href="https://www.instagram.com/mii_fen/">
+                    <img src="img/ig_icon.png" alt="ig_icon">
+                    </a>
+                </div>
+                <div class="line_icon">
+                    <a href="">
+                    <img src="img/line_icon.png" alt="line_icon">
+                    </a>
+                </div>
+            </div>
+            <div class="fw_tdl">
+                <p>MaoWoo 喵物 © 宇桂米股份有限公司<br>
+                統編 82102901<br></p>
+            </div>
+        </div>
+        <div class="end">
+            <p>本網站為緯育TibaMe前端工程師班學員專題作品，本平台僅供學習、展示之用。參考資源: 好味小姐、汪喵星球、Mao&Kou</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

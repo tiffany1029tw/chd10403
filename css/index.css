@@ -114,16 +114,10 @@ header .icons img {
     margin-bottom: 20px;
 }
 
-.banner_act .car > p{
+.banner_act p{
     color: white;
     font-size: 18px;
-    letter-spacing: 3px;
-}
-
-.banner_act .money > p{
-    color: white;
-    font-size: 18px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 
 /* ------------------ */

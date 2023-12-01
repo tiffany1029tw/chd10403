@@ -12,22 +12,22 @@ body {
     background-color: rgba(245, 239, 233, 1);
 } */
 
-.header {
+header {
     width: 100%;
     display: flex;
     position: relative;
 }
 
-.header .logo {
+header .logo {
     display: flex;
     margin: 10px 10px 0px 10px;
 }
 
-.header .logo a {
+header .logo a {
     width: 120px;
 }
 
-.header .nav_list {
+header .nav_list {
     background-color: hsl(37, 34%, 72%);
     opacity: 0.7;
     width: 100%;
@@ -37,7 +37,7 @@ body {
     align-items: center;
 }
 
-.header .nav_list li {
+header .nav_list li {
     display: flex;
     align-items: center;
     width: 100%;
@@ -63,12 +63,12 @@ body {
     color: hsl(37, 34%, 72%);
 }
 
-.header .icons {
+header .icons {
     display: flex;
     margin-right: 20px;
 }
 
-.header .icons img {
+header .icons img {
     padding: 0 6px;
 }
 

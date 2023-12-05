@@ -12,14 +12,16 @@ header {
     /* position: relative; */
 }
 
-header .logo {
+.logo {
     width: 10%;
     display: flex;
+    padding: 10px 0px 0px 20px;
 }
 
-header .logo a {
-    width: 100%;
-    margin: 10px 20px 0px 20px ;
+.logo a {
+    /* width: 100%; */
+    border: 1px red solid;
+    /* margin: 10px 20px 0px 20px ; */
 }
 
 .nav_list {
@@ -54,22 +56,22 @@ header .logo a {
     color: hsl(37, 34%, 72%);
 }
 
-header .icons {
+.icons {
     display: flex;
     align-items: center;
     width: 6%;
     margin: 0px 20px;
 }
 
-header .icons img {
+.icons img {
     padding-right: 10px;
 }
 
 /* --------------------- */
 
 .index_bg img{
-    width: 100%;
     max-width: 1920px;
+    width: 100%;
     vertical-align: top;
     position: relative;
 }
@@ -140,19 +142,19 @@ header .icons img {
     margin-top: 50px;
 }
 
-.activity .box1 {
+.box1 , .box2 {
     position: relative;
 }
 
-.activity .box1 .box1_text {
+.box1_txt {
     position: absolute;
     top: 60%;
-    background-image: url(../img/index_cat2_bg.png);
+    background-color: rgba(255, 255, 255, 0.4);
     width: 600px;
     height: 145px;
 }
 
-.activity .box1 .box1_text > p {
+.box1_txt p {
     font-size: 36px;
     text-align: center;
     line-height: 1.2;
@@ -160,19 +162,15 @@ header .icons img {
     letter-spacing: 3px;
 }
 
-.activity .box2 {
-    position: relative;
-}
-
-.activity .box2 .box2_text {
+.box2_txt {
     position: absolute;
     top: 60%;
-    background-image: url(../img/index_cat1_bg.png);
+    background-color: rgba(78, 56, 27, 0.4);
     width: 600px;
     height: 145px;
 }
 
-.activity .box2 .box2_text > p {
+.box2_txt p {
     color: white;
     line-height: 1.2;
     font-size: 36px;
@@ -205,19 +203,19 @@ header .icons img {
     margin: auto;
 }
 
-.r_prd_title .r_prd_line1 , .r_prd_line2 {
+.r_prd_line1 , .r_prd_line2 {
     width: 400px;
     border-bottom: 2px solid black;
 }
 
-.recommend_product .r_product_text {
+.r_product_text {
     font-size: 32px;
     text-align: center;
     letter-spacing: 1.5px;
     padding: 15px;
 }
 
-.recommend_product .r_product_list {
+.r_product_list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;

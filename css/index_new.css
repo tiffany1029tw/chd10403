@@ -1,0 +1,40 @@
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    background-color: rgba(245, 239, 233, 1);
+    max-width: 1920px;
+    width: 100%;
+}
+
+header {
+    max-width: 1920px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start
+}
+
+.header_list {
+    display: flex;
+    align-items: center;
+    width: 75%;
+    background-color: rgba(208, 189, 159, 0.7);
+}
+
+.header_list ul {
+    display: flex;
+    width: 100%;
+    /* border: 1px solid blue; */
+}
+
+.header_list li {
+    display: flex;
+    margin: auto;
+    /* border: 1px solid red; */
+}
+
+.header_list a {
+    text-decoration: none;
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: white;
+}
+

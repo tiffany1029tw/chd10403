@@ -12,11 +12,15 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index_rwd.css">
 
 </head>
 <body>
 
 <!-- <div class="bgc"> -->
+
+    <input type="checkbox" name="nav_switch" id="nav_switch">
+
 <header>
     
     <div class="logo">
@@ -58,6 +62,20 @@
                 </a>
             </div>
         </div>
+
+        <label for="nav-switch" class="hb">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>    
+
+        <!-- <nav class="nav_m">
+            <a href="#">關於喵物</a>
+            <a href="#">商品分類</a>
+            <a href="#">最新消息</a>
+            <a href="#">常見問題</a>
+            <a href="#">聯絡我們</a>
+        </nav> -->
 
 </header>
 
@@ -109,13 +127,13 @@
     <div class="recommend_product">
         <div class="r_prd_title">
             <div class="r_prd_line1"></div>
-                <div class="r_product_text">
+                <div class="r_prd_txt">
                     <p>推薦商品</p>
                 </div>
             <div class="r_prd_line2"></div>
         </div>
 
-    <ol class="r_product_list">
+    <ol class="r_prd_list">
         <li class="r_product1">
             <a href="products_info.html">
                 <img src="img/r_product1.png" alt="貓砂盆">
@@ -169,22 +187,26 @@
         </div>
         <div class="hs_title_line1"></div>
     </div>
+
     <div class="hs_main">
-        <div class="hs_button_left">
+        <div class="hs_btn_left">
             <div class="point"></div>
             <input type="button" class="hs_left" value="">
         </div>
+
         <div class="hs_top1">
             <img src="img/hs_top1.png" alt="top1">
             <p>Top1</p>
         </div>
-        <div class="hs_img_text">
+
+        <div class="hs_img_txt">
             <div class="hs_img">
                 <a href="products_info.html">
                 <img src="img/index_hotpd.png" alt="熱銷排行圖">
                 </a>
             </div>
-            <div class="hs_text">
+
+            <div class="hs_txt">
                 <h1>營養鮭魚主食罐</h1>
                 <p class="hs_pdtext">幼母貓、成貓、術後貓皆可食用<br>
                     補充優質蛋白質<br>
@@ -193,7 +215,8 @@
                 <p class="hs_price">NT$60</p>
             </div>
         </div>
-        <div class="hs_button_right">
+
+        <div class="hs_btn_right">
             <div class="point"></div>
             <input type="button" class="hs_right" value="">
         </div>
@@ -230,7 +253,7 @@
     </a>
 </div>
 
-<div class="footer">
+<footer>
     <div class="contact">
         <div class="ct_title">
             <p>聯絡我們</p>
@@ -267,9 +290,9 @@
         </div>
     </div>
     <div class="end">
-        <p>本網站為緯育TibaMe前端工程師班學員專題作品，本平台僅供學習、展示之用。參考資源: 好味小姐、汪喵星球、Mao&Kou</p>
+        <p>本網站為緯育TibaMe前端工程師班第88期學員專題作品，本平台僅供學習、展示之用。</p>
     </div>
-</div>
+</footer>
 </div>
 
 </body>

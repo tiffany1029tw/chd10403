@@ -222,42 +222,57 @@ header {
     padding: 10px;
 }
 
-.recommend_product ol > li {
+.recommend_product li {
     margin: 10px 0px;
 }
 
-.recommend_product ol > li > img {
-    margin-bottom: 10px;
+.recommend_product li a {
+    text-decoration: none;
+    color: black;
 }
 
-.recommend_product ol > li > .prd_name {
+.recommend_product li img {
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.recommend_product li img:hover {
+    transform: scale(1.1);
+}
+
+.recommend_product li .prd_name {
     text-align: center;
     font-size: 18px;
     letter-spacing: 1px;
     margin: 10px;
 }
 
-.recommend_product ol > li > .prd_price {
+.recommend_product li .prd_price {
     color: rgba(154, 95, 0, 1);
     text-align: center;
     font-size: 18px;
     letter-spacing: 1px;
 }
 
-.recommend_product .rp_button {
+.rp_btn {
     text-align: right;
     margin-right: 10px;
 }
 
-.recommend_product .but_read_more {
+.btn_read_more {
     font-size: 18px;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     color: rgba(78, 56, 27, 1);
     border:0;
     border-radius: 10px;
     background-color:rgba(207, 191, 168, 1);
     width: 250px;
     height: 60px;
+}
+
+.btn_read_more:hover {
+    color: rgba(207, 191, 168, 1);
+    background-color: rgba(78, 56, 27, 1);
 }
 
 /* ---------------- */
@@ -287,7 +302,7 @@ header {
 
 .hs_title_line1 , .hs_title_line2 {
     width: 400px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgba(78, 56, 27, 0.7);
 }
 
 .hs_title {
@@ -302,22 +317,33 @@ header {
     max-width: 1920px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    margin: 120px 0px 60px 0px;
+    justify-content: space-evenly;
+    margin: 120px 20px 60px 20px;
 }
 
 .hs_img_txt {
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+}
+
+.hs_img img{
+    width: 100%;
+}
+
+.hs_img a {
+    display: inline-block;
 }
 
 .hs_txt {
-    width: 420px;
+    /* width: 420px; */
+    width: 60%;
     height: 220px;
     background-color: rgba(163, 138, 98, 0.5);
     padding: 30px;
+    border-radius: 20px;
 }
 
 .hs_txt h1 {
@@ -342,77 +368,68 @@ header {
     letter-spacing: 1px;
 }
 
-.hot_sales .hs_main .hs_btn_left {
-    position: relative;
-    margin-right: -20px;
-}
-
-.hot_sales .hs_main .hs_btn_left .point {
-    width: 0px;
-    height: 0px;
-    border-right: 20px solid rgba(78, 56, 27, 1);
-    border-top: 15px solid transparent;
-    border-left: 20px solid transparent;
-    border-bottom: 15px solid transparent;
-    position: absolute;
-    top: 10px ;
-    right: 0 ;
-    bottom: 0 ;
-    left: -10px ;
-}
-
-.hot_sales .hs_main .hs_btn_right {
-    position: relative;
-    margin-left: -20px;
-}
-
-.hot_sales .hs_main .hs_btn_right .point {
-    width: 0px;
-    height: 0px;
-    border-right: 20px solid transparent;
-    border-top: 15px solid transparent;
-    border-left: 20px solid rgba(78, 56, 27, 1);
-    border-bottom: 15px solid transparent;
-    position: absolute;
-    top: 10px ;
-    right: 0 ;
-    bottom: 0 ;
-    left: 20px ;
-}
-
-.hot_sales .hs_main .hs_btn_left .hs_left {
-    width: 50px;
-    height: 50px;
+.hs_main input {
+    width: 40px;
+    height: 40px;
     border: 0;
     border-radius: 50%;
     background-color:rgba(207, 191, 168, 1);
 }
 
-.hot_sales .hs_main .hs_btn_right .hs_right {
-    width: 50px;
-    height: 50px;
-    border: 0;
-    border-radius: 50%;
-    background-color:rgba(207, 191, 168, 1);
+.hs_btn_left {
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 
-.hot_sales .hs_main .hs_top1 {
-    width: 100px;
-    height: 100px;
+.hs_btn_left .point {
+    width: 0px;
+    height: 0px;
+    border-right: 15px solid rgba(78, 56, 27, 1);
+    border-top: 10px solid transparent;
+    border-left: 15px solid transparent;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    left: -12%;
+    top: 25%;
+}
+
+.hs_btn_right {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.hs_btn_right .point {
+    width: 0px;
+    height: 0px;
+    border-right: 15px solid transparent;
+    border-top: 10px solid transparent;
+    border-left: 15px solid rgba(78, 56, 27, 1);
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    right: -12%;
+    top:25%;
+}
+
+.hs_top1 {
     display: flex;
     position: absolute;
-    top: -10%;
+    z-index: 1;
     left: 25%;
+    top: -15%;
+    align-items: center;
+    justify-content: center;
 }
 
-.hot_sales .hs_main .hs_top1 > p {
+.hs_top1 img {
+    width: 75%;
+}
+
+.hs_top1 p {
     position: absolute;
     color: white;
     font-size: 28px;
-    top: 35px;
-    right: 0;
-    bottom: 0;
-    left: 25px;
 }
 
 /* ----------------------- */
@@ -442,19 +459,19 @@ header {
     margin: auto;
 }
 
-.st_title_lines .st_title_line1 , .st_title_line2 {
+.st_title_line1 , .st_title_line2 {
     width: 400px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgba(78, 56, 27, 0.7);
 }
 
-.store_info .store_title {
+.store_title {
     font-size: 32px;
     text-align: center;
     letter-spacing: 1.5px;
     padding: 15px;
 }
 
-.store_info .store_detail{
+.store_detail{
     max-width: 1200px;
     margin: auto;
     display: flex;
@@ -465,22 +482,23 @@ header {
     vertical-align: bottom;
 }
 
-.store_info .store_detail iframe {
-    margin-top: 50px;
+.store_detail iframe {
+    margin: 50px 20px 20px 20px;
+    /* margin-top: 50px; */
 }
 
-.store_info .store_detail .store_text .st_name {
+.store_text .st_name {
     font-size: 24px;
     margin: 20px 0px;
     letter-spacing: 1;
 }
 
-.store_info .store_detail .store_text .st_info {
+.store_text .st_info {
     font-size: 18px;
     line-height: 2;
 }
 
-.btn_btt {
+/* .btn_btt {
     position: relative;
     text-align: right;
     right: 30px;
@@ -499,12 +517,40 @@ header {
     background-color: rgba(207, 191, 168, 0.6);
     font-size: 18px;
     color: rgba(78, 56, 27, 1);
-    /* writing-mode: vertical-lr; */
     text-align: center;
     margin-bottom: 100px;
+} */
+
+.btt {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 20px;
+    margin-right: 100px;
 }
 
-/* ----------------------- */
+.btt a {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+}
+
+.btt p {
+    color: rgba(78, 56, 27, 1);
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    position: absolute;
+    bottom: 10%;
+    right: 30%;
+}
+
+.btt img {
+    width: 100px;
+    display: block;
+
+}
+
+/* --------------- */
 
 footer{
     width: 100%;

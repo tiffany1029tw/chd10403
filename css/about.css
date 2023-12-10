@@ -10,16 +10,16 @@ body {
     background-position: right top , right top , left center , center , right center , right bottom ;
 }
 
+.ab_title , .st_title {
+    position: relative;
+}
+
 /* -----關於喵物----- */
 
 .about2 {
     width: 100%;
     display: flex;
-    margin: 100px 0px 100px 0px;
-}
-
-.ab_title {
-    position: relative;
+    margin: 100px 0px;
 }
 
 .ab_title img {
@@ -67,20 +67,17 @@ body {
     margin-bottom: 100px;
 }
 
-.st_title {
-    position: relative;
+.st_img img {
+    width: 100%;
 }
 
 .st_title p{
+    position: absolute;
     font-size: 32px;
     color: white;
-    position: absolute;
-    top: 90px;
-    right: 220px;
-}
-
-.st_img img {
-    width: 100%;
+    letter-spacing: 1px;
+    top:45%;
+    right: 35%;
 }
 
 .store_dtl {
@@ -92,21 +89,19 @@ body {
     margin-left: 30px;
 }
 
-.store_dtl .st_text {
-    width: 708px;
-    height: 387px;
+.st_text {
+    width: 600px;
+    height: 300px;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 50%;
 }
 
-.store_dtl .st_text .st_p {
-    width: 708px;
-    height: 387px;
-    margin-left: 140px;
-    margin-top: 120px;
+.st_text .st_p {
+    margin-left: 15%;
+    margin-top: 12%;
 }
 
-.store_dtl .st_text .st_p > p {
+.st_text p {
     padding: 10px 0px;
     font-size: 20px;
     letter-spacing: 1px;
@@ -133,5 +128,9 @@ body {
         font-size: 18px;
         margin-top: 18%;
         margin-left: 13%;
+    }
+
+    .st_text p {
+        font-size: 18px;
     }
 }

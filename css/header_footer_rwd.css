@@ -49,39 +49,13 @@
 
 /* ------手機版設定------ */
 
-@media (width > 768px) {
-    .hs_img_txt_m {
-        display: none;
-    }
-}
-
 @media (width > 1024px) {
     .hb {
         display: none;
     }
 }
 
-@media ( max-width:1360px ) {
-    .index_bg_2 img {
-        width: 70%;
-    }
-
-    .index_bg_2 p {
-        font-size: 32px;
-        right: 45%;
-    }
-}
-
 @media ( max-width:1024px ) {
-    .index_bg_2 img {
-        width: 50%;
-    }
-
-    .index_bg_2 p {
-        font-size: 24px;
-        right: 55%;
-    }
-
     .nav_list {
         display: none;
     }
@@ -109,25 +83,9 @@
         background-color: #fff;
         color: hsl(37, 34%, 72% , 1);
     }
-
-    .hs_img_txt {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
 }
 
 @media ( max-width:768px ) {
-    .index_bg_2 img {
-        width: 50%;
-    }
-
-    .index_bg_2 p {
-        font-size: 14px;
-        right: 56%;
-    }
-
     header {
         justify-content: center;
         align-items: center;
@@ -157,91 +115,6 @@
     .nav_m a:hover{
         background-color: #fff;
         color: hsl(37, 34%, 72% , 1);
-    }
-
-    .banner_act .car , .money {
-        text-align: center;
-        padding: 10px 0px;
-    }
-    
-    .banner_act img {
-        padding-bottom: 10px;
-    }
-
-    .banner_act p{
-        font-size: 12px;
-    }
-
-    .r_prd_txt , .hs_title , .store_title {
-        font-size: 24px;
-    }
-    
-    .r_prd_line1 , .r_prd_line2 , .hs_title_line1 , 
-    .st_title_line1 , .st_title_line2 {
-        width: 100px;
-    }
-
-    .r_prd_title , .st_title_lines , .hs_title_lines {
-        gap:4%;
-    }
-
-    .activity {
-        margin-top: 30px;
-    }
-
-    .activity p {
-        font-size: 24px;
-    }
-
-    .hs_img_txt {
-        display: none;
-    }
-
-    .hs_img_txt_m {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-top: 10px;
-    }
-
-    .hs_img_m a {
-        display: inline-block;
-    }
-    
-    .hs_txt_m {
-        background-color: rgba(163, 138, 98, 0.5);
-        border-radius: 20px;
-        padding: 10px;
-    }
-    
-    .hs_txt_m h1 {
-        color: white;
-        font-size: 18px;
-        margin: 10px 0px 20px 0px;
-        letter-spacing: 1px;
-    }
-    
-    .hs_txt_m .hs_pdtext_m {
-        color: white;
-        font-size: 14px;
-        letter-spacing: 0.5px;
-        line-height: 1.4;
-    }
-    
-    .hs_txt_m .hs_price_m {
-        color: rgba(154, 95, 0, 1);
-        text-align: right;
-        font-size: 16px;
-        letter-spacing: 0.5px;
-    }
-
-    .hs_btn_left {
-        margin-right: 10px;
-    }
-
-    .hs_btn_right {
-        margin-left: 10px;
     }
 
     .btt {

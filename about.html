@@ -13,42 +13,42 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/index_rwd.css">
+    <link rel="stylesheet" href="css/header_footer_rwd.css">
     <link rel="stylesheet" href="css/about.css">
 
 </head>
 
 <body>
 
-    <input type="checkbox" name="" id="nav_switch">
+<input type="checkbox" name="" id="nav_switch">
 
-<header>
+    <header>
+        
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo2.png" alt="logo">
+            </a>
+        </div>
     
-    <div class="logo">
-        <a href="index.html">
-            <img src="img/logo2.png" alt="logo">
-        </a>
-    </div>
-
-    <ul class="nav_list">
-        <li class="about">
-            <a href="about.html">關於喵物</a>
-        </li>
-        <li class="products">
-            <a href="products.html">商品分類</a>
-        </li>
-        <li class="news">
-            <a href="news.html">最新消息</a>
-        </li>
-        <li class="faq">
-            <a href="">常見問題</a>
-        </li>
-        <li class="contact">
-            <a href="">聯絡我們</a>
-        </li>
-    </ul>
-
-        <div class="icons">
+        <ul class="nav_list">
+            <li class="about">
+                <a href="about.html">關於喵物</a>
+            </li>
+            <li class="products">
+                <a href="products.html">商品分類</a>
+            </li>
+            <li class="news">
+                <a href="news.html">最新消息</a>
+            </li>
+            <li class="faq">
+                <a href="">常見問題</a>
+            </li>
+            <li class="contact_us">
+                <a href="">聯絡我們</a>
+            </li>
+        </ul>
+    
+        <div class="icons">        
             <div class="search">
                 <img src="img/searchicon.png" alt="search">
             </div>
@@ -63,15 +63,19 @@
                 </a>
             </div>
         </div>
-
+    
+    <!-- --------漢堡------- -->
+    
         <label for="nav_switch" class="hb">
             <span></span>
             <span></span>
             <span></span>
         </label>  
-
-</header> 
-        
+    
+    </header> 
+    
+<!-- --------手機導覽列--------- -->
+            
         <nav class="nav_m">
             <a href="about.html">關於喵物</a>
             <a href="products.html">商品分類</a>
@@ -80,7 +84,7 @@
             <a href="#">聯絡我們</a>
         </nav>
 
-<!-- ----------- -->
+<!-- -----關於喵物------ -->
 
     <div class="bg_store1">
         <div class="about2">
@@ -101,6 +105,8 @@
                 <img src="img/about_mii4.png" alt="關於喵物圖">
             </div>
         </div>
+
+<!-- -----門市資訊----- -->
 
         <div class="store">
             <div class="st_title">
@@ -126,46 +132,49 @@
         </div>
 
     </div>
-    <div class="footer">
-        <div class="contact">
-            <div class="ct_title">
-                <p>聯絡我們</p>
-                <hr>
-            </div>
-            <div class="ct_dtl">
-                <p>
-                    營業時間：周一至周六 10:00-18:00<br>
-                    客服電話：02-2498-1764<br>
-                    E-mail: tiffany1029tw@gmail.com<br>
-                </p>
-            </div>
+
+<!-- -----頁尾---- -->
+
+<footer>
+    <div class="contact">
+        <div class="ct_title">
+            <p>聯絡我們</p>
+            <hr>
         </div>
-        <div class="follow">
-            <div class="fw_title">
-                <p>追蹤我們</p>
-                <hr>
-            </div>
-            <div class="fw_icons">
-                <div class="ig_icon">
-                    <a href="https://www.instagram.com/mii_fen/">
-                        <img src="img/ig_icon.png" alt="ig_icon">
-                    </a>
-                </div>
-                <div class="line_icon">
-                    <a href="">
-                        <img src="img/line_icon.png" alt="line_icon">
-                    </a>
-                </div>
-            </div>
-            <div class="fw_tdl">
-                <p>MaoWoo 喵物 © 宇桂米股份有限公司<br>
-                    統編 82102901<br></p>
-            </div>
-        </div>
-        <div class="end">
-            <p>本網站為緯育TibaMe前端工程師班學員專題作品，本平台僅供學習、展示之用。參考資源: 好味小姐、汪喵星球、Mao&Kou</p>
+        <div class="ct_dtl">
+            <p>
+            營業時間：周一至周六 10:00-18:00<br>
+            客服電話：02-2498-1764<br>
+            E-mail: tiffany1029tw@gmail.com<br>
+            </p>
         </div>
     </div>
+    <div class="follow">
+        <div class="fw_title">
+            <p>追蹤我們</p>
+            <hr>
+        </div>
+        <div class="fw_icons">
+            <div class="ig_icon">
+                <a href="https://www.instagram.com/mii_fen/">
+                <img src="img/ig_icon.png" alt="ig_icon">
+                </a>
+            </div>
+            <div class="line_icon">
+                <a href="">
+                <img src="img/line_icon.png" alt="line_icon">
+                </a>
+            </div>
+        </div>
+        <div class="fw_tdl">
+            <p>MaoWoo 喵物 © 宇桂米股份有限公司<br>
+            統編 82102901<br></p>
+        </div>
+    </div>
+    <div class="end">
+        <p>本網站為緯育TibaMe前端工程師班第88期學員專題作品，<br>本平台僅供學習、展示用。</p>
+    </div>
+</footer>
 
 </body>
 

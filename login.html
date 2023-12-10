@@ -13,14 +13,17 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header_footer_rwd.css">
     <link rel="stylesheet" href="css/login.css">
 
 </head>
 
 <body>
 
+    <input type="checkbox" name="" id="nav_switch">
+
     <header>
-    
+        
         <div class="logo">
             <a href="index.html">
                 <img src="img/logo2.png" alt="logo">
@@ -40,28 +43,46 @@
             <li class="faq">
                 <a href="">常見問題</a>
             </li>
-            <li class="contact">
+            <li class="contact_us">
                 <a href="">聯絡我們</a>
             </li>
         </ul>
-            <div class="icons">
-                <div class="search">
-                    <!-- <input type="text"> -->
-                    <img src="img/searchicon.png" alt="search">
-                </div>
-                <div class="cart">
-                    <a href="cart.html">
-                    <img src="img/iconcart.png" alt="cart">
-                    </a>
-                </div>
-                <div class="mem">
-                    <a href="login.html">
-                    <img src="img/iconuser.png" alt="mem">
-                    </a>
-                </div>
-            </div>
     
-    </header>
+        <div class="icons">        
+            <div class="search">
+                <img src="img/searchicon.png" alt="search">
+            </div>
+            <div class="cart">
+                <a href="cart.html">
+                <img src="img/iconcart.png" alt="cart">
+                </a>
+            </div>
+            <div class="mem">
+                <a href="login.html">
+                <img src="img/iconuser.png" alt="mem">
+                </a>
+            </div>
+        </div>
+    
+    <!-- --------漢堡------- -->
+    
+        <label for="nav_switch" class="hb">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>  
+    
+    </header> 
+    
+<!-- --------手機導覽列--------- -->
+            
+        <nav class="nav_m">
+            <a href="about.html">關於喵物</a>
+            <a href="products.html">商品分類</a>
+            <a href="news.html">最新消息</a>
+            <a href="#">常見問題</a>
+            <a href="#">聯絡我們</a>
+        </nav>
 
 <!-- ----------------- -->
 
@@ -102,9 +123,9 @@
 </div>
 </div>
 
-<!-- -------------- -->
+<!-- -----頁尾---- -->
 
-<div class="footer">
+<footer>
     <div class="contact">
         <div class="ct_title">
             <p>聯絡我們</p>
@@ -141,9 +162,9 @@
         </div>
     </div>
     <div class="end">
-        <p>本網站為緯育TibaMe前端工程師班學員專題作品，本平台僅供學習、展示之用。參考資源: 好味小姐、汪喵星球、Mao&Kou</p>
+        <p>本網站為緯育TibaMe前端工程師班第88期學員專題作品，<br>本平台僅供學習、展示用。</p>
     </div>
-</div>
+</footer>
 
 </body>
 

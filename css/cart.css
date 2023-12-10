@@ -470,7 +470,7 @@ body {
     letter-spacing: 1px;
 }
 
-.money1, .bonus, .fare, .order_total, .end {
+.money1, .bonus, .fare, .order_total, .end_money {
     display: flex;
     justify-content: space-between;
     margin-left: 15%;
@@ -512,7 +512,7 @@ body {
     padding-right: 80px;
 }
 
-.end #end {
+.end_money #end_m {
     border: none;
     width: 80%;
     height: 80px;
@@ -523,7 +523,7 @@ body {
     font-family: 'Noto Serif TC', serif;
 }
 
-.end #end:hover{
+.end_money #end_m:hover{
     color:rgba(163, 138, 98, 1);
     background-color: white;
 }

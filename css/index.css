@@ -183,7 +183,7 @@ header {
     letter-spacing: 3px;
 }
 
-/* ------------------ */
+/* --------推薦商品---------- */
 
 .rcp_bg {
     /* max-width: 1920px; */
@@ -195,7 +195,7 @@ header {
 }
 
 .recommend_product {
-    margin: 100px 0px 120px 0px ;
+    margin: 80px 0px 120px 0px ;
 }
 
 .r_prd_title {
@@ -219,7 +219,7 @@ header {
     letter-spacing: 1.5px;
 }
 
-/* --------------- */
+/* -------推薦商品清單-------- */
 
 .r_prd_section {
     display: flex;
@@ -235,7 +235,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 1%;
-    margin: 100px 20px 50px 20px;
+    margin: 80px 20px 50px 20px;
 }
 
 .recommend_product li {
@@ -273,7 +273,6 @@ header {
 
 .rp_btn {
     text-align: center;
-    margin-right: 10px;
 }
 
 .btn_read_more {
@@ -283,7 +282,7 @@ header {
     border:0;
     border-radius: 10px;
     background-color:rgba(207, 191, 168, 1);
-    width: 250px;
+    width: 240px;
     height: 60px;
 }
 

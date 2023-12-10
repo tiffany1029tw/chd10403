@@ -299,7 +299,7 @@ header {
 }
 
 .hot_sales {
-    margin: 100px 0px 150px 0px ;
+    margin: 100px 0px 100px 0px ;
 }
 
 .hs_title_lines {
@@ -327,7 +327,7 @@ header {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 120px 30px 10px 30px;
+    margin: 80px 30px 10px 30px;
 }
 
 .hs_img_txt {
@@ -428,7 +428,7 @@ header {
     top:25%;
 }
 
-/* ----------------------- */
+/* -----------門市資訊------------ */
 
 .store_bg {
     width: 100%;
@@ -439,7 +439,7 @@ header {
 }
 
 .store_info {
-    margin: 100px 10px 120px 10px;
+    margin: 80px 10px 80px 10px;
 }
 
 .st_title_lines {
@@ -490,6 +490,8 @@ header {
     line-height: 2;
 }
 
+/* ------回到頁首------ */
+
 .btt {
     display: flex;
     justify-content: end;
@@ -517,7 +519,7 @@ header {
     width: 100px;
 }
 
-/* --------------- */
+/* ------頁尾--------- */
 
 footer{
     display: flex;

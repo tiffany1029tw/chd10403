@@ -39,11 +39,17 @@
     color: white;
     font-size: 20px;
     letter-spacing: 1px;
-    padding: 25px 20px;
+    padding: 20px 20px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /* ------------ */
+
+@media (width > 1024px) {
+    .hb {
+        display: none;
+    }
+}
 
 @media ( max-width:1360px ) {
     .index_bg_2 img {
@@ -53,12 +59,6 @@
     .index_bg_2 p {
         font-size: 32px;
         right: 45%;
-    }
-}
-
-@media (width > 1024px) {
-    .hb {
-        display: none;
     }
 }
 

@@ -156,4 +156,19 @@
         width: 100px;
     }
 
+    footer hr {
+        border: none;
+        height: 1px;
+        background-color: white;
+    }
+    
+    .contact ,
+    .follow {
+        width: 100%;
+        font-size: 15px;
+        color: white;
+        letter-spacing: 1px;
+        line-height: 1.5;
+    }
+
 }

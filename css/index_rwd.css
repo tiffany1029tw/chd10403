@@ -194,6 +194,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-top: 10px;
     }
 
     .hs_img_m a {
@@ -215,7 +216,7 @@
     
     .hs_txt_m .hs_pdtext_m {
         color: white;
-        font-size: 14px;
+        font-size: 15px;
         letter-spacing: 1px;
         line-height: 1.4;
     }
@@ -225,6 +226,14 @@
         text-align: right;
         font-size: 18px;
         letter-spacing: 1px;
+    }
+
+    .hs_btn_left {
+        margin-right: 10px;
+    }
+
+    .hs_btn_right {
+        margin-left: 10px;
     }
 
     .contact , .follow {

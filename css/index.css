@@ -541,13 +541,12 @@ footer{
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    gap: 5%;
+    gap: 10%;
     padding: 2%;
     background-color: rgba(208, 189, 159, 1);
 }
 
 footer hr {
-    width: 67%;
     border: none;
     height: 1px;
     background-color: white;
@@ -559,7 +558,7 @@ footer hr {
     color: white;
     letter-spacing: 1px;
     line-height: 1.5;
-    text-align: center;
+    padding: 10px;
 }
 
 .follow .fw_icons a{
@@ -567,6 +566,7 @@ footer hr {
 }
 
 .follow .fw_icons {
+    width: 100%;
     display: flex;
     justify-content: center;
     gap: 5%;
@@ -576,8 +576,9 @@ footer hr {
 .end {
     width: 100%;
     display: block;
-    margin-top: 20px;
-    font-size: 12px;
+    margin-top: 50px;
+    font-size: 16px;
     text-align: center;
+    letter-spacing: 1px;
     color: white;
 }

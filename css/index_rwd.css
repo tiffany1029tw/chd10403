@@ -156,19 +156,15 @@
         width: 100px;
     }
 
-    footer hr {
-        border: none;
-        height: 1px;
-        background-color: white;
-    }
-    
-    .contact ,
-    .follow {
-        width: 100%;
+    .contact , .follow {
         font-size: 15px;
-        color: white;
-        letter-spacing: 1px;
-        line-height: 1.5;
+        text-align: center;
+    }
+
+    .end {
+        font-size: 12px;
+        margin-top: 20px;
+        text-align: center;
     }
 
 }

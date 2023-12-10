@@ -83,7 +83,7 @@
     }
 
     header {
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         position: relative;
         gap: 10%;
@@ -120,12 +120,12 @@
     }
 
     .index_bg_2 p {
-        font-size: 12px;
-        right: 60%;
+        font-size: 14px;
+        right: 56%;
     }
 
     header {
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         gap: 5%;
     }
@@ -140,6 +140,10 @@
 
     .logo {
         order: 1;
+    }
+
+    .logo img {
+        width: 80px;
     }
 
     #nav_switch:checked ~ .nav_m {
@@ -161,7 +165,7 @@
     }
 
     .banner_act p{
-        font-size: 15px;
+        font-size: 12px;
     }
 
     .r_prd_txt , .hs_title , .store_title {
@@ -204,7 +208,7 @@
     .hs_txt_m {
         background-color: rgba(163, 138, 98, 0.5);
         border-radius: 20px;
-        padding: 15px;
+        padding: 10px;
     }
     
     .hs_txt_m h1 {
@@ -216,16 +220,16 @@
     
     .hs_txt_m .hs_pdtext_m {
         color: white;
-        font-size: 15px;
-        letter-spacing: 1px;
+        font-size: 14px;
+        letter-spacing: 0.5px;
         line-height: 1.4;
     }
     
     .hs_txt_m .hs_price_m {
         color: rgba(154, 95, 0, 1);
         text-align: right;
-        font-size: 18px;
-        letter-spacing: 1px;
+        font-size: 16px;
+        letter-spacing: 0.5px;
     }
 
     .hs_btn_left {

@@ -97,7 +97,6 @@ header {
 /* -----------banner活動列----------- */
 
 .banner_act {
-    width: 100%;
     background-color: rgba(163, 153, 128, 1);
     display: flex;
     justify-content: center;
@@ -186,7 +185,6 @@ header {
 /* --------推薦商品---------- */
 
 .rcp_bg {
-    /* max-width: 1920px; */
     width: 100%;
     background-image: url(../img/bg_9.png);
     background-size: auto;
@@ -199,13 +197,11 @@ header {
 }
 
 .r_prd_title {
-    max-width: 1440px;
-    width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     text-align: center;
-    margin: auto;
+    gap:10%;
 }
 
 .r_prd_line1 , .r_prd_line2 {
@@ -217,6 +213,7 @@ header {
     font-size: 32px;
     text-align: center;
     letter-spacing: 1.5px;
+    padding: 15px;
 }
 
 /* -------推薦商品清單-------- */
@@ -306,13 +303,11 @@ header {
 }
 
 .hs_title_lines {
-    max-width: 1440px;
-    width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     text-align: center;
-    margin: auto;
+    gap:10%;
 }
 
 .hs_title_line1 {
@@ -445,17 +440,14 @@ header {
 
 .store_info {
     margin: 100px 10px 120px 10px;
-    width: 100%;
 }
 
 .st_title_lines {
-    max-width: 1440px;
-    width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     text-align: center;
-    margin: auto;
+    gap:10%;
 }
 
 .st_title_line1 , .st_title_line2 {
@@ -480,11 +472,11 @@ header {
 }
 
 .store_detail iframe {
-    margin: 50px 30px 0px 30px;
+    margin: 40px 30px 0px 30px;
 }
 
 .store_text {
-    margin: 30px;
+    margin: 20px;
 }
 
 .store_text .st_name {
@@ -523,20 +515,17 @@ header {
 
 .btt img {
     width: 100px;
-    display: block;
-
 }
 
 /* --------------- */
 
 footer{
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
     gap: 10%;
-    padding: 2%;
+    padding: 20px;
     background-color: rgba(208, 189, 159, 1);
 }
 
@@ -560,7 +549,6 @@ footer hr {
 }
 
 .follow .fw_icons {
-    width: 100%;
     display: flex;
     justify-content: center;
     gap: 5%;

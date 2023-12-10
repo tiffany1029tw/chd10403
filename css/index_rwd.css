@@ -164,18 +164,17 @@
         font-size: 15px;
     }
 
-    .r_prd_txt ,
-    .hs_title ,
-    .store_title {
+    .r_prd_txt , .hs_title , .store_title {
         font-size: 24px;
     }
     
-    .r_prd_line1 , 
-    .r_prd_line2 ,
-    .hs_title_line1 ,
-    .st_title_line1 , 
-    .st_title_line2 {
+    .r_prd_line1 , .r_prd_line2 , .hs_title_line1 , 
+    .st_title_line1 , .st_title_line2 {
         width: 100px;
+    }
+
+    .r_prd_title , .st_title_lines , .hs_title_lines {
+        gap:4%;
     }
 
     .activity {

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>喵物常見問題</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header_footer_rwd.css">
+    <link rel="stylesheet" href="css/qa.css">
+
+</head>
+<body>
+
+    <input type="checkbox" name="" id="nav_switch">
+
+    <header>
+        
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo2.png" alt="logo">
+            </a>
+        </div>
+    
+        <ul class="nav_list">
+            <li class="about">
+                <a href="about.html">關於喵物</a>
+            </li>
+            <li class="products">
+                <a href="products.html">商品分類</a>
+            </li>
+            <li class="news">
+                <a href="news.html">最新消息</a>
+            </li>
+            <li class="faq">
+                <a href="">常見問題</a>
+            </li>
+            <li class="contact_us">
+                <a href="">聯絡我們</a>
+            </li>
+        </ul>
+    
+        <div class="icons">        
+            <div class="search">
+                <img src="img/searchicon.png" alt="search">
+            </div>
+            <div class="cart">
+                <a href="cart.html">
+                <img src="img/iconcart.png" alt="cart">
+                </a>
+            </div>
+            <div class="mem">
+                <a href="login.html">
+                <img src="img/iconuser.png" alt="mem">
+                </a>
+            </div>
+        </div>
+    
+<!-- --------漢堡------- -->
+    
+        <label for="nav_switch" class="hb">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>  
+    
+    </header> 
+    
+<!-- --------手機導覽列--------- -->
+            
+        <nav class="nav_m">
+            <a href="about.html">關於喵物</a>
+            <a href="products.html">商品分類</a>
+            <a href="news.html">最新消息</a>
+            <a href="#">常見問題</a>
+            <a href="#">聯絡我們</a>
+        </nav>    
+
+<!-- -----常見問題標題------ -->
+
+<div class="qa_top">
+    <div class="qa_title">
+        <img src="img/main_title.png" alt="常見問題標題底色">
+        <p>常見問題QA</p>
+    </div>
+</div>
+
+<!-- ------常見問題內容----- -->
+
+<div class="qa_main">
+
+    <div class="qa_sidebar">
+        <button onclick="showContent('order')">訂單問題</button>
+        <button onclick="showContent('prd')">商品問題</button>
+        <button onclick="showContent('change')">退換貨問題</button>
+    </div>
+
+    <div class="qa_content">
+
+        <div class="order_content">
+            <ul class="order_list">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+        <div class="prd_content">
+            <ul class="prd_list">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+        <div class="change_content">
+            <ul class="change_list">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+
+</body>
+</html>

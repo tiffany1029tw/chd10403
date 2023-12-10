@@ -62,7 +62,7 @@ header {
     display: inline-block;
 }
 
-/* --------------------- */
+/* ---------首頁背景大圖------------ */
 
 .index_bg {
     position: relative;
@@ -94,28 +94,24 @@ header {
     right: 30%;
 }
 
-/* ---------------------- */
+/* -----------banner活動列----------- */
 
 .banner_act {
     width: 100%;
     background-color: rgba(163, 153, 128, 1);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+.banner_act .car , .money {
+    text-align: center;
+    padding: 15px 0px;
 }
 
 .banner_act img {
-    padding: 15px;
-    margin:auto;
-}
-
-.banner_act .car {
-    text-align: center;
-    margin: 10px;
-}
-
-.banner_act .money{
-    text-align: center;
-    margin-bottom: 20px;
+    padding-bottom: 15px;
 }
 
 .banner_act p{
@@ -124,7 +120,7 @@ header {
     letter-spacing: 2px;
 }
 
-/* ------------------ */
+/* --------活動大圖---------- */
 
 .act_bg {
     width: 100%;

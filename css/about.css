@@ -183,7 +183,7 @@ body {
 }
 
 @media (width > 1024px) {
-    .about2_m , .about_main_m {
+    .about2_m , .about_main_m , .store_m , .store_dtl_m{
         display: none;
     }
 }

@@ -203,19 +203,19 @@
     .hs_txt_m {
         background-color: rgba(163, 138, 98, 0.5);
         border-radius: 20px;
-        padding: 30px;
+        padding: 15px;
     }
     
     .hs_txt_m h1 {
         color: white;
-        font-size: 20px;
+        font-size: 18px;
         margin: 10px 0px 20px 0px;
         letter-spacing: 1px;
     }
     
     .hs_txt_m .hs_pdtext_m {
         color: white;
-        font-size: 15px;
+        font-size: 14px;
         letter-spacing: 1px;
         line-height: 1.4;
     }

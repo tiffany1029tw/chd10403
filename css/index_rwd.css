@@ -159,11 +159,12 @@
     .contact , .follow {
         font-size: 15px;
         text-align: center;
+        padding: 20px 0px;
     }
 
     .end {
         font-size: 12px;
-        margin-top: 20px;
+        margin-top: 15px;
         text-align: center;
     }
 

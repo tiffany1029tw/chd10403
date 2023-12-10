@@ -37,9 +37,9 @@
     display: block;
     text-decoration: none;
     color: white;
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: 1px;
-    padding: 20px 20px;
+    padding: 25px 20px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -138,6 +138,15 @@
         color: hsl(37, 34%, 72% , 1);
     }
 
+    .banner_act .car , .money {
+        text-align: center;
+        padding: 10px 0px;
+    }
+    
+    .banner_act img {
+        padding-bottom: 10px;
+    }
+
     .banner_act p{
         font-size: 15px;
     }
@@ -154,6 +163,14 @@
     .st_title_line1 , 
     .st_title_line2 {
         width: 100px;
+    }
+
+    .activity {
+        margin-top: 30px;
+    }
+
+    .activity p {
+        font-size: 24px;
     }
 
     .contact , .follow {

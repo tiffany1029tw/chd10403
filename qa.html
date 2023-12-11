@@ -84,6 +84,8 @@
 
 <!-- -----常見問題標題------ -->
 
+<div class="qa_bg">
+
 <div class="qa_top">
     <div class="qa_title">
         <img src="img/main_title.png" alt="常見問題標題底色">
@@ -101,139 +103,192 @@
         <button onclick="showContent('change')">退換貨問題</button>
     </div>
 
-<!-- -----內容----- -->
+<!-- ------手機版側邊欄變在上面----- -->
 
-<div class="qa_container">
+<div class="qa_sidebar_m">
+    <button onclick="showContent('order')">訂單問題</button>
+    <button onclick="showContent('prd')">商品問題</button>
+    <button onclick="showContent('change')">退換貨問題</button>
+</div>
+
+<!-- -----問題內容----- -->
+
+    <div class="qa_container">
 
 <!-- -----訂單問題---- -->
 
-    <div class="qa_item">
+        <div class="qa_item">
 
-        <div class="order">
-            <div class="question">
-                <section>Q</section>
-                下單後什麼時候會出貨？
+            <div class="qa_order">
+                <div class="qa">
+                    <div class="question">
+                        <section>Q</section>下單後什麼時候會出貨？
+                    </div>
+                    <div class="answer">
+                        <section>A</section>現貨商品1-3工作天，預購商品7-10工作天。
+                    </div>
+                </div>
             </div>
-            <div class="answer">
-                <section>A</section>
-                現貨商品1-3工作天，預購商品7-10工作天。
+
+            <div class="qa_order">
+                <div class="qa">
+                    <div class="question">
+                        <section>Q</section>
+                        付款方式跟配送方式有哪些？
+                    </div>
+                    <div class="answer">
+                        <section>A</section>
+                        付款方式有線上刷卡、ATM轉帳、超商取貨付款；配送方式有新竹物流宅配、超商店到店
+                    </div>
+                </div>
             </div>
-            <a class="point" href="">▼</a>
+
+            <div class="qa_order">
+                <div class="qa">
+                    <div class="question">
+                        <section>Q</section>
+                        訂單成立後該怎麼取消訂單？
+                    </div>
+                    <div class="answer">
+                        <section>A</section>
+                        請至「聯絡我們」或加官方Line，客服會為您確認處理。 
+                    </div>
+                </div>
+            </div>
+
         </div>
-
-        <div class="order">
-            <div class="question">
-                <section>Q</section>
-                付款方式跟配送方式有哪些？
-            </div>
-            <div class="answer">
-                <section>A</section>
-                付款方式有線上刷卡、ATM轉帳、超商取貨付款<br>
-                配送方式有新竹物流宅配、超商店到店
-            </div>
-            <a class="point" href="">▼</a>
-        </div>
-
-        <div class="order">
-            <div class="question">
-                <section>Q</section>
-                訂單成立後該怎麼取消訂單？
-            </div>
-            <div class="answer">
-                <section>A</section>
-                請至「聯絡我們」或加官方Line@157qsrrv，客服會為您確認處理。 
-            </div>
-            <a class="point" href="">▼</a>
-        </div>
-
-    </div>
 
 <!-- -------商品問題--------- -->
 
-<div class="qa_item">
+        <div class="qa_item">
 
-    <div class="prd">
-        <div class="question">
-            <section>Q</section>
-            我該怎麼挑選適合我家貓貓的貓罐頭或飼料？
-        </div>
-        <div class="answer">
-            <section>A</section>
-            商品頁面皆會標示適合的年齡，若有特殊需求可聯繫客服幫您評估確認喔！
-        </div>
-        <a class="point" href="">▼</a>
-    </div>
+            <div class="qa_prd">
+                <div class="qa">
+                    <div class="question">
+                        <section>Q</section>
+                        該怎麼挑選適合我家貓貓的貓罐頭或飼料？
+                    </div>
+                    <div class="answer">
+                        <section>A</section>
+                        商品頁面皆會標示適合的年齡，若有特殊需求可聯繫客服幫您評估確認。 
+                    </div>
+                </div>
+            </div>
 
-    <div class="prd">
-        <div class="question">
-            <section>Q</section>
-            罐罐開封後該如何保存？
-        </div>
-        <div class="answer">
-            <section>A</section>
-            開封後若未食用完畢，可放置保鮮盒冷藏保存，但還是建議盡快於當日的下一餐就食用完畢喔！
-        </div>
-        <a class="point" href="">▼</a>
-    </div>
+            <div class="qa_prd">
+                <div class="qa">
+                    <div class="question">
+                        <section>Q</section>
+                        罐罐開封後該如何保存？
+                    </div>
+                    <div class="answer">
+                        <section>A</section>
+                        開封後若未食用完畢，可放置保鮮盒冷藏保存，但還是建議盡快於當日食用完畢喔！ 
+                    </div>
+                </div>
+            </div>
 
-    <div class="prd">
-        <div class="question">
-            <section>Q</section>
-            貓砂該如何挑選？
-        </div>
-        <div class="answer">
-            <section>A</section>
-            因每隻貓咪的習慣愛好不同，可以觀察貓咪的使用情況來做評估！也可不定期更換貓砂種類喔！ 
-        </div>
-        <a class="point" href="">▼</a>
-    </div>
+            <div class="qa_prd">
+                <div class="qa">
+                    <div class="question">
+                        <section>Q</section>
+                        貓砂該如何挑選？
+                    </div>
+                    <div class="answer">
+                        <section>A</section>
+                        因每隻貓的習慣不同，可以觀察貓咪的使用情況來做評估！也要不定期更換貓砂種類喔！ 
+                    </div>
+                </div>
+            </div>
 
-</div>
+        </div>
 
 <!-- ------退換貨問題------ -->
 
-<div class="qa_item">
+        <div class="qa_item">
 
-    <div class="change">
-        <div class="question">
-            <section>Q</section>
-            可以退貨嗎？
+            <div class="qa_back">
+                <div class="qa">
+                    <div class="question">
+                        <section>Q</section>
+                        可以退換貨嗎？
+                    </div>
+                    <div class="answer">
+                        <section>A</section>
+                        若有退換貨需求，請先將商品妥善保管，並至「聯絡我們」或加官方Line，客服會為您確認。  
+                    </div>
+                </div>
+            </div>
+
+            <div class="qa_back">
+                <div class="qa">
+                    <div class="question">
+                        <section>Q</section>
+                        訂單成立後可以更改商品嗎？
+                    </div>
+                    <div class="answer">
+                        <section>A</section>
+                        請至「聯絡我們」或加官方Line，客服會為您確認處理。  
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <div class="answer">
-            <section>A</section>
-            若有退換貨需求，請先將商品妥善保存，並至「聯絡我們」或加官方Line@157qsrrv，客服會為您確認處理喔！ 
-        </div>
-        <a class="point" href="">▼</a>
     </div>
-
-    <div class="change">
-        <div class="question">
-            <section>Q</section>
-            收到商品但有缺件怎麼辦？
-        </div>
-        <div class="answer">
-            <section>A</section>
-            請保管好商品並拍照提供您收到的商品內容，至「聯絡我們」或加官方Line @157qsrrv，客服會為您確認處理。 
-        </div>
-        <a class="point" href="">▼</a>
-    </div>
-
-    <div class="change">
-        <div class="question">
-            <section>Q</section>
-            商品有瑕疵怎麼辦？
-        </div>
-        <div class="answer">
-            <section>A</section>
-            請保管好商品並拍照提供您收到的瑕疵商品，至「聯絡我們」或加官方Line @157qsrrv，客服會為您確認處理。 
-        </div>
-        <a class="point" href="">▼</a>
-    </div>
-
-</div>
-
 </div>
 </div>
+
+<!-- ------回到頁首---- -->
+
+<div class="btt">
+    <a href="">
+        <p>回到<br>頁首</p>
+        <img src="img/catgandwhite.png" alt="貓掌圖回到頁首">
+    </a>
+</div>
+
+<!-- -----頁尾---- -->
+
+<footer>
+    <div class="contact">
+        <div class="ct_title">
+            <p>聯絡我們</p>
+            <hr>
+        </div>
+        <div class="ct_dtl">
+            <p>
+            營業時間：周一至周六 10:00-18:00<br>
+            客服電話：02-2498-1764<br>
+            E-mail: tiffany1029tw@gmail.com<br>
+            </p>
+        </div>
+    </div>
+    <div class="follow">
+        <div class="fw_title">
+            <p>追蹤我們</p>
+            <hr>
+        </div>
+        <div class="fw_icons">
+            <div class="ig_icon">
+                <a href="https://www.instagram.com/mii_fen/">
+                <img src="img/ig_icon.png" alt="ig_icon">
+                </a>
+            </div>
+            <div class="line_icon">
+                <a href="">
+                <img src="img/line_icon.png" alt="line_icon">
+                </a>
+            </div>
+        </div>
+        <div class="fw_tdl">
+            <p>MaoWoo 喵物 © 宇桂米股份有限公司<br>
+            統編 82102901<br></p>
+        </div>
+    </div>
+    <div class="end">
+        <p>本網站為緯育TibaMe前端工程師班第88期學員專題作品，<br>本平台僅供學習、展示用。</p>
+    </div>
+</footer>
 
 </body>
 </html>

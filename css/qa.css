@@ -1,3 +1,12 @@
+.qa_bg {
+    max-width: 1920px;
+    width: 100%;
+    background-image: url(../img/qa_bg4.png) , url(../img/qa_bg2.png) , url(../img/qa_bg5.png) , url(../img/qa_bg3.png);
+    background-size: auto ;
+    background-repeat: no-repeat;
+    background-position: top right , left bottom , bottom center , left center;
+}
+
 .qa_top {
     width: 100%;
     display: flex;
@@ -29,6 +38,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 5%;
+    margin-bottom: 50px;
 }
 
 .qa_sidebar {
@@ -62,7 +72,7 @@
 
 .qa_container {
     width: 50%;
-    background-color: rgba(207, 191, 168, 0.3);
+    background-color: rgba(207, 191, 168, 0.5);
     border-radius: 20px;
     padding: 20px 40px;
     margin-bottom: 80px;
@@ -79,6 +89,10 @@
     font-size: 20px;
     letter-spacing: 1.5px;
     margin: 8px 0px;
+}
+
+.answer {
+    line-height: 1.5;
 }
 
 .question section {
@@ -119,15 +133,26 @@
 }
 
 .qa_sidebar_m button {
-    width: 120px;
+    width: 110px;
     height: 50px;
     background-color: rgba(207, 191, 168, 1);
     border-radius: 20px;
     border: 0;
-    margin: 0px 15px 40px 15px;
+    margin: 0px 6px 30px 6px;
     font-size: 18px;
     color: rgba(78, 56, 27, 1);
     text-align: center;
+}
+
+@media (width<1322px) {
+    .qa_bg {
+        max-width: 1920px;
+        width: 100%;
+        background-image: url(../img/qa_bg6.png) , url(../img/qa_bg2.png) , url(../img/qa_bg5.png);
+        background-size: auto ;
+        background-repeat: no-repeat;
+        background-position: top right , left bottom , bottom center ;
+    }
 }
 
 @media (width > 1024px) {
@@ -148,15 +173,43 @@
     .qa_container {
         width: 100%;
         padding: 10px 20px;
-        margin: 0px 20px;
+        margin: 50px 20px;
     }
 
     .question , .answer {
         font-size: 16px;
         word-wrap: break-word;
     }
+
 }
 
 @media (max-width:768px) {
+    .qa_title {
+        left: 12.5%;
+    }
+
+    .qa_title img {
+        width: 80%;
+    }
     
+    .qa_title p {
+        position: absolute;
+        font-size: 24px;
+        color: white;
+        letter-spacing: 1px;
+        top: 45%;
+        right: 40%;
+    }
+
+    .answer section {
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+    }
+
+    .question section {
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+    }
 }

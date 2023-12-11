@@ -232,7 +232,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 1%;
-    margin: 80px 20px 50px 20px;
+    margin: 80px 20px 60px 20px;
 }
 
 .recommend_product li {
@@ -272,18 +272,18 @@ header {
     text-align: center;
 }
 
-.btn_read_more {
+.rp_btn a {
+    text-decoration: none;
     font-size: 18px;
     letter-spacing: 0.5px;
     color: rgba(78, 56, 27, 1);
     border:0;
     border-radius: 10px;
     background-color:rgba(207, 191, 168, 1);
-    width: 240px;
-    height: 60px;
+    padding: 15px 30px;
 }
 
-.btn_read_more:hover {
+.rp_btn a:hover {
     color: rgba(207, 191, 168, 1);
     background-color: rgba(78, 56, 27, 1);
 }

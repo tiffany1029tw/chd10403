@@ -27,6 +27,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 5%;
 }
 
 .qa_sidebar {
@@ -48,5 +49,13 @@
     font-size: 24px;
     color: rgba(78, 56, 27, 1);
     text-align: center;
+}
+
+/* --------內容--------- */
+
+.qa_container {
+    width: 50%;
+    background-color: rgba(207, 191, 168, 0.5);
+    padding: 20px;
 }
 

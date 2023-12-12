@@ -180,6 +180,11 @@ body {
     .about2 , .about_main , .store , .store_dtl {
         display: none;
     }
+
+    .bg_store1 {
+        background-image: url(../img/bgabout1.png), url(../img/bgabout4.png), url(../img/bgabout5.png), url(../img/bgabout3.png) , url(../img/bgabout2.png);
+        background-position: right top , left center , center , right center , right bottom ;
+    }
 }
 
 @media (width > 1024px) {

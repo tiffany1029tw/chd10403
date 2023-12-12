@@ -11,44 +11,35 @@ body {
     background-position: right top , top , center , right bottom , left bottom , right center , left bottom;
 }
 
-.sale .sale2 {
+.sale2 {
     display: flex;
-    margin: 100px 0px 100px 0px;
+    margin: 100px 0px;
 }
 
-.sale .sale2 .sale_title{
-    position: relative
+.sale_title{
+    position: relative ;
 }
 
-.sale .sale2 .sale_title > p{
+.sale_title p{
     position: absolute;
     font-size: 32px;
     color: white;
-    font-family: 'Noto Serif TC', serif;
-    top: 90px;
-    right: 220px;
+    top:45%;
+    left: 40%;
 }
+
+/* -------最新消息內容-------- */
 
 .sale_card {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     align-content: center;
-    margin-bottom: 50px;
-}
-
-.sale_card .sc_1 , .sc_2 {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 50px 0px;
-    gap: 50px;
-    align-items: center;
+    justify-content: center;
 }
 
 .sale_card .title{
     font-size: 24px;
     color:rgba(78, 56, 27, 1);
-    font-family: 'Noto Serif TC', serif;
     letter-spacing: 2px;
     padding: 20px 0px;
     border-bottom: 1px solid black;
@@ -57,7 +48,6 @@ body {
 .sale_card .main{
     font-size: 20px;
     color:rgba(78, 56, 27, 1);
-    font-family: 'Noto Sans TC', serif;
     letter-spacing: 1px;
     line-height: 1.8;
     margin: 20px 0px;
@@ -65,21 +55,20 @@ body {
 
 /* ---------------------- */
 
-.knowledges .knowledges2 {
+.knowledges2 {
     display: flex;
 }
 
-.knowledges .knowledges2 .kl_title{
+.kl_title{
     position: relative
 }
 
-.knowledges .knowledges2 .kl_title > p{
+.kl_title p{
     position: absolute;
     font-size: 32px;
     color: white;
-    font-family: 'Noto Serif TC', serif;
-    top: 90px;
-    right: 220px;
+    top:45%;
+    left: 40%;
 }
 
 .kl_card {
@@ -91,7 +80,7 @@ body {
     margin-left: 150px;
 }
 
-.kl_card .kl_1 , .kl_2 {
+.kl_1 , .kl_2 {
     display: flex;
     flex-wrap: wrap;
     margin: 50px 0px;
@@ -102,7 +91,6 @@ body {
 .kl_card .title{
     font-size: 24px;
     color:rgba(78, 56, 27, 1);
-    font-family: 'Noto Serif TC', serif;
     letter-spacing: 2px;
     padding: 20px 0px;
     border-bottom: 1px solid black;
@@ -111,7 +99,6 @@ body {
 .kl_card .main{
     font-size: 20px;
     color:rgba(78, 56, 27, 1);
-    font-family: 'Noto Sans TC', serif;
     letter-spacing: 1px;
     line-height: 1.8;
     margin: 20px 0px;
@@ -136,7 +123,7 @@ body {
     margin: auto;
 }
 
-.page_btn button > a {
+.page_btn button a {
     display: block;
     width: 50px;
     height: 50px;
@@ -146,7 +133,6 @@ body {
 .page_btn p {
     color: rgba(78, 56, 27, 1);
     font-size: 24px;
-    font-family: 'Noto Serif TC', serif;
     text-align: center;
     margin-top: 20%;
 }
@@ -157,4 +143,20 @@ body {
 
 .page_btn p:hover {
     color: rgba(207, 191, 168, 1);
+}
+
+/* ------手機版------ */
+
+@media (max-width:768px) {
+    .sale_title , .kl_title {
+        margin: auto;
+    }
+
+    .sale_title p , .kl_title p {
+        font-size: 24px;
+    }
+
+    .sale_title img , .kl_title img {
+        width: 350px;
+    }
 }

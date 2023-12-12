@@ -1,3 +1,12 @@
+.ct_bg {
+    max-width: 1920px;
+    width: 100%;
+    background-image: url(../img/ct_bg1.png) , url(../img/ct_bg2.png) , url(../img/ct_bg3.png) , url(../img/ct_bg4.png) , url(../img/ct_bg5.png) , url(../img/ct_bg6.png);
+    background-size: auto ;
+    background-repeat: no-repeat;
+    background-position: left bottom , left center , right bottom , right bottom , left bottom , right top;
+}
+
 .ct_top {
     width: 100%;
     display: flex;
@@ -28,15 +37,15 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
 }
 
 .ct_icon_txt {
     text-align: center;
     line-height: 1.5;
-    font-size: 16px;
+    font-size: 20px;
     letter-spacing: 1px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 .ct_icon_txt img {
@@ -49,15 +58,19 @@
     align-items: center;
 }
 
-.ct_textarea textarea , .email {
+textarea , .email {
     max-width: 600px;
     width: 100%;
     resize: none;
     margin-top: 10px;
     border: 0;
     border-radius: 20px;
-    font-size: 16px;
+    font-size: 18px;
     padding: 20px;
+}
+
+textarea {
+    height: 400px;
 }
 
 .ct_textarea .submit {
@@ -68,7 +81,7 @@
     height: 50px;
     background-color: rgba(207, 191, 168, 1);
     color: rgba(78, 56, 27, 1);
-    font-size: 18px;
+    font-size: 20px;
     margin-top: 20px;
 }
 
@@ -81,7 +94,7 @@
 
 @media (max-width:768px) {
     .title {
-        text-align: center;
+        margin: auto;
     } 
 
     .title img {

@@ -79,6 +79,7 @@
 }
 
 .qa {
+    width: 100%;
     padding: 20px;
     border-bottom: 1px solid rgba(78, 56, 27, 0.2);
 }
@@ -184,6 +185,7 @@
 }
 
 @media (max-width:768px) {
+
     .qa_title {
         left: 12.5%;
     }

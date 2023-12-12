@@ -117,6 +117,7 @@ body {
 
 .ab_title_m , .st_title_m {
     position: relative;
+    margin: auto;
     margin-top: 50px;
 }
 

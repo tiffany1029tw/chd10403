@@ -79,9 +79,13 @@
 }
 
 .qa {
-    width: 100%;
+    width: 80%;
     padding: 20px;
     border-bottom: 1px solid rgba(78, 56, 27, 0.2);
+}
+
+.lastqa {
+    border-bottom:none;
 }
 
 .question , .answer {
@@ -134,7 +138,7 @@
 }
 
 .qa_sidebar_m button {
-    width: 110px;
+    width: 120px;
     height: 50px;
     background-color: rgba(207, 191, 168, 1);
     border-radius: 20px;
@@ -187,20 +191,15 @@
 @media (max-width:768px) {
 
     .qa_title {
-        left: 12.5%;
+        margin: auto;
+    }
+
+    .qa_title p {
+        font-size: 24px;
     }
 
     .qa_title img {
-        width: 80%;
-    }
-    
-    .qa_title p {
-        position: absolute;
-        font-size: 24px;
-        color: white;
-        letter-spacing: 1px;
-        top: 45%;
-        right: 40%;
+        width: 350px;
     }
 
     .answer section {

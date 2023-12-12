@@ -11,6 +11,8 @@ body {
     background-position: right top, right top, left center, left bottom;
 }
 
+/* -----圖片hover------- */
+
 .prd_bottom img {
     transition: transform 0.3s;
 }
@@ -27,23 +29,30 @@ body {
     transform: scale(1.1);
 }
 
-.products .products2 {
+/* -------標題-------- */
+
+.products2 {
     display: flex;
     margin: 100px 0px 100px 0px;
 }
 
-.products .products2 .pds_title {
-    position: relative
+.pds_title {
+    position: relative ;
 }
 
-.products .products2 .pds_title>p {
+.pds_title img {
+    width: 100%;
+}
+
+.pds_title p {
     position: absolute;
     font-size: 32px;
     color: white;
-    font-family: 'Noto Serif TC', serif;
-    top: 90px;
-    right: 220px;
+    top:45%;
+    left: 40%;
 }
+
+/* --------類別--------- */
 
 .prd_category {
     display: flex;
@@ -53,39 +62,54 @@ body {
 
 .prd_category p {
     font-size: 32px;
-    font-family: 'Noto Serif TC', serif;
     letter-spacing: 2px;
     text-align: center;
     padding: 30px 0px;
     color: rgba(37, 25, 10, 1);
 }
 
-.prd_category .prd_top {
+.prd_top {
     width: 75%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    padding: 30px;
-    margin: 30px;
+    gap: 2%;
 }
 
-.prd_category .prd_top a {
+.prd_top a {
     display: block;
     text-decoration: none;
 }
 
-.prd_category .prd_bottom a {
-    display: block;
-    text-decoration: none;
-}
-
-.prd_category .prd_bottom {
+.prd_bottom {
     width: 50%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    padding: 30px;
-    margin: 10px 0px 120px 0px;
+    margin-bottom: 100px;
+    padding-top: 20px;
+    gap: 2%;
+}
+
+.prd_bottom a {
+    display: block;
+    text-decoration: none;
+}
+
+/* -------手機版----- */
+
+@media (max-width:768px) {
+    .pds_title {
+        margin: auto;
+    }
+
+    .pds_title p {
+        font-size: 24px;
+    }
+
+    .pds_title img {
+        width: 350px;
+    }
 }

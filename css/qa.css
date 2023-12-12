@@ -183,11 +183,9 @@
         font-size: 16px;
         word-wrap: break-word;
     }
-
 }
 
 @media (max-width:768px) {
-
     .qa_title {
         margin: auto;
     }

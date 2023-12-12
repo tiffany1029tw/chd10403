@@ -183,8 +183,8 @@ body {
     }
 
     .bg_store1 {
-        background-image: url(../img/bgabout1.png), url(../img/bgabout4.png), url(../img/bgabout5.png), url(../img/bgabout3.png) , url(../img/bgabout2.png);
-        background-position: right top , left center , center , right center , right bottom ;
+        background-image: url(../img/bgabout4.png), url(../img/bgabout5.png) , url(../img/bgabout2.png);
+        background-position: left center , top center , right top ;
     }
 }
 

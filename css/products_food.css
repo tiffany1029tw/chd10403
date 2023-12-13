@@ -204,6 +204,19 @@ body {
 /* ---------手機版---------- */
 
 @media (max-width:768px) {    
+
+    .foods_title {
+        margin: auto;
+    }
+
+    .foods_title p {
+        font-size: 24px;
+    }
+
+    .foods_title img {
+        width: 350px;
+    }
+
     .main_section {
         flex-wrap: wrap;
     }
@@ -217,10 +230,10 @@ body {
     }
 
     .sidebar_foods button {
-        width: 180px;
+        width: 150px;
         height: 60px;
         border-radius: 20px;
-        margin: 10px 10px;
+        margin: 10px 5px;
         font-size: 20px;
     }
 

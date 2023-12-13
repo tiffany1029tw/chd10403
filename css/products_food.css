@@ -15,11 +15,11 @@ body {
 
 .foods2 {
     display: flex;
-    margin: 100px 0px 100px 0px;
+    margin: 60px 0px 50px 0px;
 }
 
 .foods_title{
-    position: relative
+    position: relative;
 }
 
 .foods_title p{

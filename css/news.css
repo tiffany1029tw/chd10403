@@ -50,6 +50,11 @@ body {
     border-bottom: 1px solid black;
 }
 
+.sale_card img ,
+.kl_card img {
+    width: 100%;
+}
+
 .sale_card .main , 
 .kl_card .main {
     font-size: 20px;
@@ -112,10 +117,10 @@ body {
         width: 350px;
     }
 
-    .sale_card img , 
+    /* .sale_card img , 
     .kl_card img {
         width: 50%;
-    } 
+    }  */
 
     .sale_card .title , 
     .kl_card .title {
@@ -126,5 +131,4 @@ body {
     .kl_card .main {
         font-size: 16px;
     }
-
 }

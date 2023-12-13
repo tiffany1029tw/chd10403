@@ -11,16 +11,19 @@ body {
     background-position: right top , top , center , right bottom , left bottom , right center , left bottom;
 }
 
-.sale2 {
+/* ------------- */
+
+.sale2 , .knowledges2 {
     display: flex;
     margin: 100px 0px;
 }
 
-.sale_title{
+.sale_title , .kl_title {
     position: relative ;
 }
 
-.sale_title p{
+.sale_title p ,
+.kl_title p {
     position: absolute;
     font-size: 32px;
     color: white;
@@ -30,14 +33,16 @@ body {
 
 /* -------最新消息內容-------- */
 
-.sale_card {
+.sale_card , .kl_card {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
+    gap: 5%;
 }
 
-.sale_card .title{
+.sale_card .title , 
+.kl_card .title {
     font-size: 24px;
     color:rgba(78, 56, 27, 1);
     letter-spacing: 2px;
@@ -45,103 +50,50 @@ body {
     border-bottom: 1px solid black;
 }
 
-.sale_card .main{
+.sale_card .main , 
+.kl_card .main {
     font-size: 20px;
     color:rgba(78, 56, 27, 1);
     letter-spacing: 1px;
     line-height: 1.8;
-    margin: 20px 0px;
+    padding-bottom: 15%;
 }
 
-/* ---------------------- */
-
-.knowledges2 {
-    display: flex;
+.kl_card .main {
+    padding-top: 2%;
 }
 
-.kl_title{
-    position: relative
-}
-
-.kl_title p{
-    position: absolute;
-    font-size: 32px;
-    color: white;
-    top:45%;
-    left: 40%;
-}
-
-.kl_card {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
-    margin-bottom: 50px;
-    margin-left: 150px;
-}
-
-.kl_1 , .kl_2 {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 50px 0px;
-    gap: 50px;
-    align-items: center;
-}
-
-.kl_card .title{
-    font-size: 24px;
-    color:rgba(78, 56, 27, 1);
-    letter-spacing: 2px;
-    padding: 20px 0px;
-    border-bottom: 1px solid black;
-}
-
-.kl_card .main{
-    font-size: 20px;
-    color:rgba(78, 56, 27, 1);
-    letter-spacing: 1px;
-    line-height: 1.8;
-    margin: 20px 0px;
-}
-
-/* ----------------------------- */
+/* -------------頁碼按鈕---------------- */
 
 .page_btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
-    margin-bottom: 100px;
+    gap: 1%;
+    margin-bottom: 10%;
 }
 
 .page_btn button {
     border: none;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background-color: rgba(207, 191, 168, 1);
-    margin: auto;
 }
 
 .page_btn button a {
     display: block;
-    width: 50px;
-    height: 50px;
+    width: 100%;
     text-decoration: none;
-}
-
-.page_btn p {
+    margin: auto;
     color: rgba(78, 56, 27, 1);
     font-size: 24px;
     text-align: center;
-    margin-top: 20%;
 }
 
-.page_btn button:hover {
+.page_btn button:hover ,
+.page_btn button:hover a {
     background-color: rgba(78, 56, 27, 1);
-}
-
-.page_btn p:hover {
     color: rgba(207, 191, 168, 1);
 }
 

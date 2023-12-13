@@ -221,6 +221,11 @@ body {
         flex-wrap: wrap;
     }
 
+    .pd_card {
+        margin-top: 5%;
+        width: 25%;
+    }
+
     .sidebar_foods {
         display: flex;
         flex-wrap: wrap;

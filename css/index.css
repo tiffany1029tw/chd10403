@@ -479,13 +479,13 @@ header {
     margin: 20px;
 }
 
-.store_text .st_name {
+.st_name {
     font-size: 24px;
     margin: 20px 0px;
     letter-spacing: 1;
 }
 
-.store_text .st_info {
+.st_info {
     font-size: 18px;
     line-height: 2;
 }

@@ -34,19 +34,17 @@ body {
 /* ----標題------- */
 
 .select_all {
-    width: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
-    padding-bottom: 3%;
+    padding: 0% 10% 3% 0%;
     gap: 1%;
-    margin-right: 10%;
 }
 
 #select1 , #select2 {
-    width: 200px;
+    width: 180px;
     height: 50px;
-    font-size: 20px;
+    font-size: 18px;
     border: none;
     border-radius: 10px;
     background-color: rgba(207, 191, 168, 1);
@@ -58,21 +56,25 @@ body {
 /* ---------側邊欄--------- */
 
 .main_section {
+    width: 100%;
     display: flex;
     justify-content: center;
     gap: 5%;
 }
 
-.sidebar_foods button {
+.sidebar_foods {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 400px;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.sidebar_foods button {
+    width: 360px;
     height: 80px;
     background-color: rgba(207, 191, 168, 1);
     border-radius: 0px 20px 20px 0px;
     border: 0;
-    margin: 30px 0px;
+    margin: 10px 0px;
     font-size: 24px;
     color: rgba(78, 56, 27, 1);
     text-align: center;
@@ -86,6 +88,8 @@ body {
 /* ----------主要商品---------- */
 
 .main_cans {
+    max-width: 1200px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center ;
@@ -93,7 +97,7 @@ body {
 }
 
 .pd_card {
-    margin: 10px 20px 30px 20px;
+    margin: 10px;
 }
 
 .pd_card a {
@@ -102,7 +106,6 @@ body {
 
 .pd_img img{
     width: 100%;
-    height: auto;
     vertical-align: middle;
 }
 
@@ -224,20 +227,27 @@ body {
         flex-wrap: wrap;
     }
 
+    .main_cans {
+        width: 100%;
+    }
+
     .pd_card {
         width: 25%;
     }
 
+    .pd_tdl p {
+        font-size: 15px;
+    }
+
     .sidebar_foods {
-        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
-        margin-bottom: 10%;
+        margin-bottom: 5%;
     }
 
     .sidebar_foods button {
-        width: 150px;
+        width: 120px;
         height: 60px;
         border-radius: 20px;
         margin: 10px 5px;

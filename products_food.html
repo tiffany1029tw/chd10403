@@ -97,104 +97,101 @@
             </div>
         </div>
 
+    <!-- -----篩選----- -->
+
+    <div class="select_all">
+        <div class="selects1">
+            <form action="select1">
+                <label for="select1"></label>
+            <select name="select1" id="select1">
+                <option value="default">商品排序</option>
+                <option value="time_new">上架時間 新到舊</option>
+                <option value="hot_high">熱銷程度 高到低</option>
+                <option value="price_high">商品價格 高到低</option>
+                <option value="price_low">商品價格 低到高</option>
+            </select>
+            </form>
+        </div>
+                
+        <div class="selects2">
+            <form action="select2">
+                <label for="select2"></label>
+            <select name="select2" id="select2">
+                <option value="default">商品數顯示</option>
+                <option value="6">每頁顯示6個</option>
+                <option value="9">每頁顯示9個</option>
+                <option value="12">每頁顯示12個</option>
+            </select>
+            </form>
+        </div>
+    </div>
+
 <!-- ---------側邊分類---------- -->
 
-        <div class="main_section">
+<div class="main_section">
 
-            <div class="sidebar_foods">
-                <button onclick="showContent('foods')">貓罐頭/飼料</button>
-                <button onclick="showContent('snacks')">貓零食</button>
-                <button onclick="showContent('pupu')">貓砂</button>
-                <button onclick="showContent('toys')">貓玩具</button>
-                <button onclick="showContent('supplies')">貓用品</button>
-            </div>
+    <div class="sidebar_foods">
+        <button onclick="showContent('foods')">貓罐頭/飼料</button>
+        <button onclick="showContent('snacks')">貓零食</button>
+        <button onclick="showContent('pupu')">貓砂</button>
+        <button onclick="showContent('toys')">貓玩具</button>
+        <button onclick="showContent('supplies')">貓用品</button>
+    </div>
 
 <!-- -------主要商品----------- -->
 
-            <div class="main_cans">
-
-<!-- -----篩選----- -->
-
-                <div class="select_all">
-                    <div class="selects1">
-                        <form action="select1">
-                            <label for="select1"></label>
-                        <select name="select1" id="select1">
-                            <option value="default">商品排序</option>
-                            <option value="time_new">上架時間 新到舊</option>
-                            <option value="hot_high">熱銷程度 高到低</option>
-                            <option value="price_high">商品價格 高到低</option>
-                            <option value="price_low">商品價格 低到高</option>
-                        </select>
-                        </form>
-                    </div>
-                    
-                    <div class="selects2">
-                        <form action="select2">
-                            <label for="select2"></label>
-                        <select name="select2" id="select2">
-                            <option value="default">商品數顯示</option>
-                            <option value="6">每頁顯示6個</option>
-                            <option value="9">每頁顯示9個</option>
-                            <option value="12">每頁顯示12個</option>
-                        </select>
-                        </form>
-                    </div>
+    <div class="main_cans">
+        <div class="pd_card">
+            <a href="products_info.html">
+                <div class="pd_img">
+                    <img src="img/sal1.png" alt="營養鮭魚主食罐">
                 </div>
-
-<!-- ----商品---- -->
-
-                <div class="pd_card">
-                    <a href="products_info.html">
-                        <div class="pd_img">
-                            <img src="img/sal1.png" alt="營養鮭魚主食罐">
-                        </div>
-                        <div class="pd_tdl">
-                            <p class="name">營養鮭魚主食罐 80g/165g</p>
-                            <p class="price">NT$60-NT$115</p>
-                        </div>
-                    </a>
-                    <button>加入購物車</button>
+                <div class="pd_tdl">
+                    <p class="name">營養鮭魚主食罐 80g/165g</p>
+                    <p class="price">NT$60-NT$115</p>
                 </div>
+            </a>
+            <button>加入購物車</button>
+        </div>
 
-                <div class="pd_card">
-                    <a href="">
-                        <div class="pd_img">
-                            <img src="img/chi1.png" alt="幼母貓營養罐雞肉">
-                        </div>
-                        <div class="pd_tdl">
-                            <p class="name">幼母貓營養罐 雞肉 85g</p>
-                            <p class="price">NT$90</p>
-                        </div>
-                    </a>
-                    <button>加入購物車</button>
+        <div class="pd_card">
+            <a href="">
+                <div class="pd_img">
+                    <img src="img/chi1.png" alt="幼母貓營養罐雞肉">
                 </div>
+                <div class="pd_tdl">
+                    <p class="name">幼母貓營養罐 雞肉 85g</p>
+                    <p class="price">NT$90</p>
+                </div>
+            </a>
+            <button>加入購物車</button>
+        </div>
 
-                <div class="pd_card">
-                    <a href="">
-                        <div class="pd_img">
-                            <img src="img/tur1.png" alt="全貓主食罐火雞">
-                        </div>
-                        <div class="pd_tdl">
-                            <p class="name">全貓主食罐 田園火雞 165g</p>
-                            <p class="price">NT$129</p>
-                        </div>
-                    </a>
-                    <button>加入購物車</button>
+        <div class="pd_card">
+            <a href="">
+                <div class="pd_img">
+                    <img src="img/tur1.png" alt="全貓主食罐火雞">
                 </div>
+                <div class="pd_tdl">
+                    <p class="name">全貓主食罐 田園火雞 165g</p>
+                    <p class="price">NT$129</p>
+                </div>
+            </a>
+            <button>加入購物車</button>
+        </div>
 
-                <div class="pd_card">
-                    <a href="">
-                        <div class="pd_img">
-                            <img src="img/sal1.png" alt="幼母貓營養罐鮭魚">
-                        </div>
-                        <div class="pd_tdl">
-                            <p class="name">幼母貓營養罐 鮭魚 55g</p>
-                            <p class="price">NT$40</p>
-                        </div>
-                    </a>
-                    <button>加入購物車</button>
+        <div class="pd_card">
+            <a href="">
+                <div class="pd_img">
+                    <img src="img/sal1.png" alt="幼母貓營養罐鮭魚">
                 </div>
+                <div class="pd_tdl">
+                    <p class="name">幼母貓營養罐 鮭魚 55g</p>
+                    <p class="price">NT$40</p>
+                </div>
+            </a>
+            <button>加入購物車</button>
+        </div>
 
                 <div class="pd_card">
                     <a href="">

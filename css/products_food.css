@@ -133,7 +133,7 @@ body {
     color: white;
     font-size: 20px;
     letter-spacing: 1px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     padding: 15px;
 }
 
@@ -227,16 +227,16 @@ body {
         flex-wrap: wrap;
     }
 
-    .main_cans {
-        width: 100%;
-    }
-
     .pd_card {
-        width: 25%;
+        width: 30%;
     }
 
-    .pd_tdl p {
-        font-size: 15px;
+    .pd_tdl .name {
+        font-size: 13px;
+    }
+
+    .pd_tdl .price {
+        font-size: 12px;
     }
 
     .sidebar_foods {
@@ -254,15 +254,8 @@ body {
         font-size: 20px;
     }
 
-    .select_all {
-        justify-content: center;
-        margin:auto;
-        gap: 3%;
-    }
-
-    #select1 , #select2 {
-        width: 150px;
-        height: 50px ;
-        font-size: 16px;
+    .pd_card button {
+        font-size: 12px;
+        padding: 5px;
     }
 }

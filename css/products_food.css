@@ -87,7 +87,6 @@ body {
 
 .main_cans {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center ;
     align-items: center;
@@ -103,6 +102,7 @@ body {
 
 .pd_img img{
     width: 100%;
+    height: auto;
     vertical-align: middle;
 }
 
@@ -123,8 +123,7 @@ body {
 }
 
 .pd_card button {
-    width: 250px;
-    height: 60px;
+    width: 100%;
     border-radius: 10px;
     border: 0;
     background-color: rgba(163, 138, 98, 1);
@@ -132,6 +131,7 @@ body {
     font-size: 20px;
     letter-spacing: 1px;
     margin-bottom: 40px;
+    padding: 15px;
 }
 
 .pd_card button:hover {

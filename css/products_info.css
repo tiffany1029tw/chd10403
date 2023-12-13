@@ -2,20 +2,20 @@ body {
     font-family: 'Noto Sans TC', sans-serif;
 }
 
+/* <!-- ---------麵包屑 --> */
+
 .wrap {
-    padding: 50px 30px;
-    margin-bottom: 50px;
+    width: 100%;
+    margin: auto;
+    padding: 3% 5%;
 }
 
 .breadcrumb {
-    width: 90%;
     display: flex;
-    margin: auto;
-    /* margin: 100px 0px 100px 50px; */
 }
 
 .breadcrumb li {
-    padding: 0px 20px;
+    padding: 0% 1%;
     list-style: none;
 }
 
@@ -23,7 +23,6 @@ body {
     text-decoration: none;
     font-size: 20px;
     color:rgba(207, 191, 168, 1);
-    font-family: 'Noto Serif TC', serif;
     padding-left: 10px;
 }
 
@@ -40,58 +39,63 @@ body {
     content:'>';
 }
 
-/* -------------------- */
+/* ----------內容---------- */
 
 .main_top {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
     background-image: url(../img/info_5.png) , url(../img/info_2.png);
     background-position: right top ;
     background-repeat: no-repeat;
     background-size: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    padding: 3%;
 }
 
-.main_top .top_dtl {
-    margin-bottom: 50px;
-}
-
-.main_top .top_img {
+.top_img {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    margin-right: -200px;
 }
 
-.main_top .top_img .big_img {
-    margin: 10px;
+.big_img {
+    padding-bottom: 5%;
 }
 
-.main_top .top_img .small_img img {
+.small_img img {
     padding: 10px ;
 }
 
-.main_top .top_dtl .dtl_txt .pd_name {
-    font-size: 30px;
-    font-family: 'Noto Serif TC', serif;
+/* -----商品資訊---- */
+
+.top_dtl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pd_name {
+    font-size: 24px;
     text-align: center;
     color: rgba(78, 56, 27, 1);
-    margin-bottom: 30px;
+    margin: 30px 0px;
     letter-spacing: 1px;
 }
 
-.main_top .top_dtl .dtl_txt .gp1 , .gp2 {
+.cp1 , .cp2 {
     font-size: 20px;
-    font-family: 'Noto Serif TC', serif;
     text-align: center;
     color: rgba(37, 25, 10, 1);
     margin: 20px 0px;
     letter-spacing: 1px;
 }
 
-.main_top .top_dtl .dtl_txt2 .detail {
+.detail {
     font-size: 20px;
-    font-family: 'Noto Sans TC', serif;
     text-align: left;
     color: rgba(37, 25, 10, 1);
     border-top: 1px solid rgba(78, 56, 27, 0.5);
@@ -102,63 +106,66 @@ body {
     letter-spacing: 1px;
 }
 
-.main_top .dtl_buy label {
-    font-size: 20px;
-    font-family: 'Noto Serif TC', serif;
-    text-align: left;
-    color: rgba(37, 25, 10, 1);
-}
-
-.main_top .dtl_buy .spec , .count {
+.dtl_buy {
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin: 20px 0px;
-    padding: 0px 30px;
+    gap: 20px;
 }
 
-.main_top .dtl_buy .spec .btn1 , .btn2 {
-    width: 120px;
-    height: 60px;
+.dtl_buy label {
+    font-size: 20px;
+    color: rgba(37, 25, 10, 1);
+    letter-spacing: 1px;
+}
+
+.spec button {
+    width: 100px;
+    height: 50px;
     border: none;
     color: rgba(78, 56, 27, 1);
     background-color: rgba(207, 191, 168, 1);
     font-size: 20px;
     letter-spacing: 1px;
     border-radius: 20px;
-    margin: 10px;
+    padding: 10px;
 }
 
-.main_top .dtl_buy .count select {
-    width: 260px;
-    height: 60px;
+.count select {
+    width: 200px;
+    height: 50px;
     color: rgba(78, 56, 27, 1);
     background-color: rgba(207, 191, 168, 1);
     border: none;
     border-radius: 20px;
     font-size: 20px;
     text-align: center;
-    margin-left: 10px;
+    padding: 10px;
 }
 
-.main_top .dtl_buy .cart_btn #cart{
-    width: 380px;
-    height: 85px;
+#cart{
+    width: 460px;
+    height: 70px;
     background-color: rgba(163, 138, 98, 1);
     color: white;
     font-size: 22px;
     text-align: center;
-    font-family: 'Noto Serif TC', serif;
     letter-spacing: 1px;
     border: none;
     border-radius: 20px;
-    margin: 10px 0px 0px 30px;
+    padding: 10px;
 }
 
-/* --------------------------- */
+#cart:hover {
+    color: rgba(163, 138, 98, 1);
+    background-color: white;
+}
+
+/* ---------中間區塊----------- */
 
 .main_center {
-    width: 1200px;
+    width: 100%;
     margin: auto;
     background-image: url(../img/info.png) , url(../img/info_3.png) ;
     background-position: left ;
@@ -169,35 +176,30 @@ body {
 .main_center .item {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-top: 50px;
 }
 
-.main_center .item .pic {
-    width: 50%;
-    flex-shrink: 0;
-}
-
-.main_center .item .pic img{
+.pic img{
     width: 100%;
 }
 
-.main_center .item > :first-child {
+.item :first-child {
     margin-right: -10%;
 }
 
-.main_center .txt:nth-child(1) {
+.txt:nth-child(1) {
     background-color: rgba(0, 0, 0, 0.3);
     color: white;
 }
 
-.main_center .txt:nth-child(2) {
+.txt:nth-child(2) {
     background-color: rgba(255, 255, 255, 0.4);
     color: rgba(78, 56, 27, 1);
 }
 
-.main_center .item .txt {
-    width: 50%;
-    flex-shrink: 0;
+.item .txt {
+    width: 40%;
     padding: 50px 30px;
     position: relative;
     z-index: 1;
@@ -205,82 +207,81 @@ body {
     border-radius: 20px;
 }
 
-.main_center .item .txt p {
+.item .txt p {
     font-size: 20px;
     letter-spacing: 1.5px;
     line-height: 2;
     text-align: center;
-    font-family: 'Noto Serif TC', serif;
 }
 
-.main_center .last {
+.last {
     display: flex;
-    margin: 50px 0px 80px 0px;
+    justify-content: center;
     align-items: center;
-    column-gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 5%;
 }
 
-.main_center .last img {
-    width: 650px;
-    height: 740px;
+.last img {
+    width: 100%;
+    height: auto;
 }
 
 .last .txt3 {
-    color: rgba(37, 25, 10, 1);
     font-size: 20px;
-    letter-spacing: 2;
-    line-height: 2;
-    font-family: 'Noto Sans TC', serif;
+    letter-spacing: 1;
+    line-height: 1.5;
+    padding: 10px;
+    margin: 5%
 }
 
 /* --------------------- */
-
-h1 {
-    font-size: 32px;
-    text-align: center;
-    font-family: 'Noto Serif TC', serif;
-    letter-spacing: 1.5px;
-    color: rgba(78, 56, 27, 1);
-}
 
 .more {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px 0px 30px 10px
+    margin: 30px 0px;
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: rgba(78, 56, 27, 1);
+    padding-top: 1%;
 }
 
 .pd_card {
-    margin: 10px 30px 30px 30px;
+    margin: 15px;
 }
 
 .pd_card a {
     text-decoration: none;
 }
 
-.pd_card .pd_img{
+.pd_img{
     width: 100%;
+    height: auto;
     vertical-align: middle;
     margin-bottom: 10px;
 }
 
-.pd_card .pd_tdl .name {
+.pd_tdl .name {
     font-size: 20px;
     color: rgba(37, 25, 10, 1);
-    font-family: 'Noto Serif TC', serif;
     text-align: center;
     letter-spacing: 1px;
     margin: 20px 0px;
 }
 
-.pd_card .pd_tdl .price {
+.pd_tdl .price {
     font-size: 20px;
     color: rgba(154, 95, 0, 1);
-    font-family: 'Noto Serif TC', serif;
     text-align: center;
     letter-spacing: 1px;
-    margin: 10px 0px 20px 0px;
+    margin-bottom: 20px;
 }
 
 .pd_card button {
@@ -291,9 +292,8 @@ h1 {
     background-color: rgba(163, 138, 98, 1);
     color: white;
     font-size: 20px;
-    font-family: 'Noto Serif TC', serif;
     letter-spacing: 1px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .pd_card button:hover {

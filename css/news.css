@@ -111,4 +111,20 @@ body {
     .sale_title img , .kl_title img {
         width: 350px;
     }
+
+    .sale_card img , 
+    .kl_card img {
+        width: 50%;
+    } 
+
+    .sale_card .title , 
+    .kl_card .title {
+        font-size: 20px;
+    }
+
+    .sale_card .main , 
+    .kl_card .main {
+        font-size: 16px;
+    }
+
 }

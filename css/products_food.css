@@ -178,32 +178,6 @@ body {
     color: rgba(207, 191, 168, 1);
 }
 
-
-/* ------------------- */
-
-.btn_btt {
-    position: relative;
-    text-align: right;
-    right: 5%;
-}
-
-.btn_btt a {
-    text-decoration: none;
-    width: 200px;
-}
-
-.btn_btt .btt {
-    border: 0;
-    border-radius: 10px ;
-    width: 200px;
-    height: 60px;
-    background-color: rgba(207, 191, 168, 0.6);
-    font-size: 18px;
-    color: rgba(78, 56, 27, 1);
-    text-align: center;
-    margin-bottom: 100px;
-}
-
 /* ---------手機版---------- */
 
 @media (max-width:768px) {   

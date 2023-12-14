@@ -114,7 +114,7 @@ body {
     color: rgba(37, 25, 10, 1);
     text-align: center;
     letter-spacing: 1px;
-    padding: 20px 0px;
+    padding: 10px 0px;
 }
 
 .pd_tdl .price {
@@ -122,7 +122,7 @@ body {
     color: rgba(154, 95, 0, 1);
     text-align: center;
     letter-spacing: 1px;
-    padding-bottom: 20px;
+    padding-bottom: 12px;
 }
 
 .pd_card button {

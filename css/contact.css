@@ -104,4 +104,12 @@ textarea {
     .title img {
         width: 350px;
     }
+
+    .ct_bg {
+        background-image: url(../img/ct_bg1.png) , url(../img/ct_bg3.png) , url(../img/ct_bg4.png) , url(../img/ct_bg5.png) , url(../img/ct_bg6.png);
+        background-position: left bottom , right bottom , right bottom , left bottom , right top;
+    }
+
+    textarea , .email {
+        width: 80%;
 }

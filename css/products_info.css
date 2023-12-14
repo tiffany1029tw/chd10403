@@ -66,7 +66,7 @@ body {
 }
 
 .small_img img {
-    width: 25%;
+    width: 21%;
     padding: 10px 10px 0px 0px;
 }
 
@@ -305,17 +305,82 @@ h1 {
 
 /* ----手機版-------- */
 
+.more_m {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0px;
+}
+
+.pd_card_m {
+    margin: auto;
+    margin: 10px;
+}
+
+.pd_card_m a {
+    text-decoration: none;
+}
+
+.pd_tdl_m {
+    padding-top: 5px;
+}
+
+.pd_tdl_m .name_m {
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.pd_tdl_m .price_m {
+    font-size: 15px;
+    color: rgba(154, 95, 0, 1);
+    text-align: center;
+}
+
+.cart_m {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: 0;
+    background-color: rgba(163, 138, 98, 1);
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin: 15px 0px;
+}
+
+@media (width>768px) {
+    .more_m {
+        display: none;
+    }
+}
+
 @media (max-width:768px) {
+    .wrap {
+        padding: 5% 5%;
+    }
+
     .breadcrumb a {
         font-size: 15px;
     }
 
     .top_img {
         width: 67.5%;
+        justify-content: center;
+        align-items: center;
+        padding-top: 10px;
     }
 
-    .more {
-        flex-wrap: wrap;
+    .small_img {
+        width: 100%;
+        padding-top: 5px;
+    }
+
+    .small_img img {
+        width: 23.5%;
+        padding: 0;
     }
 
     .top_dtl .pd_name {
@@ -389,5 +454,9 @@ h1 {
 
     .pd_tdl .name {
         margin: 15px 0px;
+    }
+
+    .more {
+        display: none;
     }
 }

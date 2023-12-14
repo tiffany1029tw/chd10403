@@ -114,7 +114,7 @@
             <p>購物車明細</p>
         </div>
 
-        <div class="cart_main">
+        <!-- <div class="cart_main">
 
             <div class="items">
                 <div class="all">
@@ -213,22 +213,119 @@
                 </div>
             </div>
 
-            <div class="total_wrap">
-                <div class="total2">
-                    <div class="total_txt">
-                        <p>合計</p>
-                    </div>
-                    <div class="total_price">
-                        <p>NT$260</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+        </div> -->
+    
 
     <!-- -------購物車格線系統--------- -->
 
-    
+    <div class="container cart_main">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-6 items">
+            <div class="col all">
+                <p>全選</p>
+            </div>
+            <div class="col pd_name">
+                <p>商品資訊</p>
+            </div>
+            <div class="col count">
+                <p>數量</p>
+            </div>
+            <div class="col price">
+                <p>單件價格</p>
+            </div>
+            <div class="col total">
+                <p>小計</p>
+            </div>
+            <div class="col cancel">
+                <p>刪除</p>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-6 dtls">
+            <div class="col checkbox">
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <label for="checkbox"></label>
+            </div>
+            <div class="col pd_info">
+                <div class="pd_pic">
+                    <img src="img/cart_pdpic.png" alt="商品圖">
+                    <p class="pd_name1">成貓主食罐-鱸魚雞</p>
+                </div>
+            </div>
+            <div class="col count1">
+                <select name="count1" id="count1">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            <div class="col price1">
+                <p>NT$65</p>
+            </div>
+            <div class="col total1">
+                <p>NT$199</p>
+            </div>
+            <div class="col cancel_btn">
+                <button class="cancel" value="">X</button>
+            </div>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-6 dtls">
+            <div class="col checkbox2">
+                <input type="checkbox" name="checkbox2" id="checkbox2">
+                <label for="checkbox"></label>
+            </div>
+            <div class="col pd_info">
+                <div class="pd_pic">
+                    <img src="img/cart_pdpic.png" alt="商品圖">
+                    <p class="pd_name1">幼貓營養罐-火雞</p>
+                </div>
+            </div>
+            <div class="col count1">
+                <select name="count1" id="count1">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+            <div class="col price1">
+                <p>NT$65</p>
+            </div>
+            <div class="col total1">
+                <p>NT$195</p>
+            </div>
+            <div class="col cancel_btn">
+                <button class="cancel" value="">X</button>
+            </div>
+        </div>
+
+<!-- ------合計----- -->
+
+        <div class="total_wrap">
+            <div class="total2">
+                <div class="total_txt">
+                    <p>合計</p>
+                </div>
+                <div class="total_price">
+                    <p>NT$260</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
     <!-- ----------加購品------------- -->
 

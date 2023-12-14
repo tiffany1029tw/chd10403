@@ -64,13 +64,15 @@ body {
 
 .cart_main {
     width: 100%;
+    max-width: 1920px;
 }
 
 .items {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10%;
+    flex-wrap: nowrap;
+    gap: 5%;
     border-bottom: 1px solid rgba(78, 56, 27, 0.2) ;
     padding-bottom: 15px;
 }
@@ -91,40 +93,11 @@ body {
     gap: 5%;
 }
 
+/* --------------- */
+
 .dtls input[type="checkbox"] {
     display: none;
 }
-
-.dtls input[type="checkbox"] + label {
-    position: relative;
-    padding-left: 30px;
-    cursor: pointer;
-    display: inline-block;
-}
-
-.dtls input[type="checkbox"] + label::before{
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 50px;
-    height: 50px;
-    border: 2px solid rgba(163, 138, 98, 1);
-    border-radius: 10px;
-    z-index: 1;
-}
-
-.dtls input[type="checkbox"]:checked + label::before {
-    background-color: rgba(163, 138, 98, 0.5);
-    content: "✔";
-    font-size: 24px;
-    color: white;
-    text-align: center;
-    line-height: 50px;
-}
-
-/* --------------- */
 
 .dtls input[type="checkbox"] + label {
     position: relative;

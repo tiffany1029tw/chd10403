@@ -67,7 +67,7 @@ body {
     justify-content: center;
     flex-wrap: nowrap;
     border-bottom: 1px solid rgba(78, 56, 27, 0.2) ;
-    padding-bottom: 1.5%;
+    padding-bottom: 30px;
 }
 
 .items p {
@@ -84,7 +84,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-wrap: nowrap;
-    padding: 1% 0%;
+    padding: 30px 0px;
 }
 
 .dtls > .col {
@@ -174,14 +174,14 @@ body {
 
 .total_wrap {
     border-top: 1px solid rgba(78, 56, 27, 0.2) ;
-    margin-top: 5%;
+    margin-top: 40px;
 }
 
 .total2 {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin-top: 2%;
+    margin-top: 40px;
     margin-right: 7%;
 }
 
@@ -196,11 +196,11 @@ body {
     letter-spacing: 1px;
 }
 
-/* ---------------------- */
+/* ----------加購品------------ */
 
 .main_add {
     border-bottom: 1px solid rgba(78, 56, 27, 0.2) ;
-    margin: 3% 0%;
+    margin: 100px 0px;
 }
 
 .add_item {
@@ -209,7 +209,7 @@ body {
     justify-content: center;
     height: auto;
     background-color: rgba(163, 153, 128, 1);
-    padding: 2% 0%;
+    padding: 30px 0px;
     margin-bottom: 80px;
 }
 
@@ -221,6 +221,7 @@ body {
 }
 
 .add_pds {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -241,9 +242,12 @@ body {
 }
 
 .pd_card .pd_img{
+    padding-bottom: 10px;
+}
+
+.pd_img img {
     width: 100%;
     vertical-align: middle;
-    padding-bottom: 10px;
 }
 
 .pd_tdl .name {
@@ -462,7 +466,7 @@ body {
 
 @media (max-width:768px) {
     .nav {
-        margin-top: 60px;
+        margin-top: 45px;
     }
 
     .nav .buywhat , .info , .done {
@@ -481,5 +485,127 @@ body {
 
     .point {
         display: none;
+    }
+
+    .cart_nav {
+        margin: 40px 0px;
+    }
+
+    .cart_nav p {
+        font-size: 20px;
+    }
+
+    .items {
+        padding-bottom: 20px;
+    }
+
+    .items p {
+        font-size: 15px;
+    }
+
+    .cart_main .dtls {
+        padding: 20px 0px;
+    }
+
+    .dtls input[type="checkbox"] + label::before{
+        width: 15px;
+        height: 15px;
+    }
+    
+    .dtls input[type="checkbox"]:checked + label::before {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .dtls .pd_pic {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    .dtls .pd_pic img {
+        width: 100%;
+    }
+
+    .dtls p {
+        font-size: 12px;
+    }
+
+    .dtls select {
+        width: 50px;
+        height: 20px;
+        font-size: 12px;
+    }
+
+    .dtls .cancel {
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+    }
+
+    .total2 p {
+        font-size: 12px;
+    }
+
+    .total_wrap {
+        margin-top: 10px;
+    }
+
+    .main_add {
+        margin: 30px 0px;
+    }
+
+    .add_pds {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .add_item {
+        margin-bottom: 40px;
+    }
+
+    .add_txt p {
+        font-size: 20px;
+    }
+
+    .pd_tdl .name {
+        font-size: 15px;
+    }
+    
+    .pd_tdl .price {
+        font-size: 15px;
+        padding-bottom: 15px;
+    }
+
+    .rp_button {
+        text-align: center;
+        margin: 50px;
+    }
+
+    .order_info {
+        flex-direction: column;
+    }
+
+    .way {
+        width: 95%;
+    }
+
+    .way_del, .way_pay {
+        font-size: 18px;
+    }
+
+    .attention ul {
+        font-size: 15px;
+    }
+
+    .order_info {
+        margin-top: 50px;
+    }
+
+    .order_dtl {
+        width: 95%;
+    }
+
+    .end_money #end_m {
+        font-size: 20px;
     }
 }

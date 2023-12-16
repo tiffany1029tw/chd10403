@@ -33,17 +33,13 @@ body {
 }
 
 .nav p {
-    font-size: 24px;
+    font-size: 20px;
     color: rgba(37, 25, 10, 1);
     letter-spacing: 1px;
     text-align: center;
 }
 
 /* --------購物車內容------------- */
-
-.cart {
-    width: 100%;
-}
 
 .cart_nav {
     height: auto;
@@ -53,7 +49,7 @@ body {
 }
 
 .cart_nav p {
-    font-size: 28px;
+    font-size: 24px;
     color: white;
     letter-spacing: 1px;
     text-align: center;
@@ -213,12 +209,12 @@ body {
     justify-content: center;
     height: auto;
     background-color: rgba(163, 153, 128, 1);
-    padding: 1%;
+    padding: 2% 0%;
     margin-bottom: 80px;
 }
 
 .add_txt p {
-    font-size: 28px;
+    font-size: 24px;
     color: white;
     text-align: center;
     letter-spacing: 1px;
@@ -310,6 +306,7 @@ body {
 .order_info {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin-bottom: 100px;
@@ -317,7 +314,6 @@ body {
 
 .way {
     width: 50%;
-    height: auto;
     background-color: rgba(163, 138, 98, 0.3);
     border-radius: 10px;
 }
@@ -368,10 +364,6 @@ body {
     border-bottom: 1px solid rgba(78, 56, 27, 0.2) ;
 }
 
-.way .attention {
-    width: 100%;
-}
-
 .attention ul {
     font-size: 18px;
     color: rgba(37, 25, 10, 1);
@@ -388,7 +380,7 @@ body {
 /* --------------------- */
 
 .order_dtl {
-    width: 25%;
+    width: 30%;
     background-color: rgba(255, 255, 255, 0.3);
     display: flex;
     flex-direction: column;
@@ -458,4 +450,36 @@ body {
 .end_money #end_m:hover{
     color:rgba(163, 138, 98, 1);
     background-color: white;
+}
+
+/* -----手機版------ */
+
+@media (width > 768px) {
+    .point_m {
+        display: none;
+    }
+}
+
+@media (max-width:768px) {
+    .nav {
+        margin-top: 60px;
+    }
+
+    .nav .buywhat , .info , .done {
+        width: 80px;
+        height: 20px;
+        padding: 10px;
+        margin: 0px 5px;
+    }
+    
+    .nav p {
+        font-size: 12px;
+        color: rgba(37, 25, 10, 1);
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    .point {
+        display: none;
+    }
 }

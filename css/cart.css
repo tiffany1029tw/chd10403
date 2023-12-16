@@ -72,7 +72,6 @@ body {
     align-items: center;
     justify-content: center;
     flex-wrap: nowrap;
-    gap: 5%;
     border-bottom: 1px solid rgba(78, 56, 27, 0.2) ;
     padding-bottom: 15px;
 }
@@ -90,7 +89,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5%;
+    flex-wrap: nowrap;
 }
 
 /* --------------- */
@@ -112,8 +111,8 @@ body {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 50px;
-    height: 50px;
+    width: 25px;
+    height: 25px;
     border: 2px solid rgba(163, 138, 98, 1);
     border-radius: 10px;
     z-index: 1;
@@ -122,10 +121,10 @@ body {
 .dtls input[type="checkbox"]:checked + label::before {
     background-color: rgba(163, 138, 98, 0.5);
     content: "✔";
-    font-size: 24px;
+    font-size: 15px;
     color: white;
     text-align: center;
-    line-height: 50px;
+    line-height: 25px;
 }
 
 /* ------------------- */
@@ -152,7 +151,6 @@ body {
 .dtls .pd_info {
     display: flex;
     align-items: center;
-    column-gap: 30px;
 }
 
 .dtls .cancel {

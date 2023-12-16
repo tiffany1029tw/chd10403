@@ -105,6 +105,15 @@ body {
 /* ------手機版------ */
 
 @media (max-width:768px) {
+
+    .sale2 {
+        margin: 60px 0px 50px 0px;
+    }
+
+    .knowledges2 {
+        margin-bottom: 50px;
+    }
+
     .sale_title , .kl_title {
         margin: auto;
     }
@@ -116,11 +125,6 @@ body {
     .sale_title img , .kl_title img {
         width: 350px;
     }
-
-    /* .sale_card img , 
-    .kl_card img {
-        width: 50%;
-    }  */
 
     .sale_card .title , 
     .kl_card .title {

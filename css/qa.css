@@ -186,6 +186,15 @@
 }
 
 @media (max-width:768px) {
+
+    .qa {
+        width: 100%;
+    }
+
+    .qa_top {
+        margin: 60px 0px 50px 0px;
+    }
+
     .qa_title {
         margin: auto;
     }
@@ -196,6 +205,11 @@
 
     .qa_title img {
         width: 350px;
+    }
+
+    .qa_container {
+        padding: 10px 10px;
+        margin: 50px 10px;
     }
 
     .answer section {

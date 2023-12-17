@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="css/index_rwd.css">
     <link rel="stylesheet" href="css/contact.css">
 
+    <script src="javascript/contact.js"></script>
+
 </head>
 <body>
     
@@ -104,9 +106,12 @@
     </div>
 
     <div class="ct_textarea">
-        <input type="text" class="email" placeholder="請輸入您的電子信箱">
-        <textarea name="ct_txt" id="ct_txt" cols="30" rows="10" placeholder="請輸入您的訊息，若是詢問商品或訂單，也可提供商品編號或訂單編號，也歡迎您留下其他聯絡方式！我們會盡快回覆您！謝謝"></textarea>
-        <button class="submit">送出</button>
+        <form id="contactForm" action="">
+            <input type="text" class="email" placeholder="請輸入您的電子信箱">
+            <span id="emailError" class="error"></span>
+            <textarea name="ct_txt" id="ct_txt" cols="30" rows="10" placeholder="請輸入您的訊息，若是詢問商品或訂單，也可提供商品編號或訂單編號，也歡迎您留下其他聯絡方式！我們會盡快回覆您！謝謝"></textarea>
+            <button class="submit" onclick="correctSubmit()">送出</button>
+        </form>
     </div>
 
 </div>

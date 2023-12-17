@@ -32,6 +32,10 @@
 
 /* -------聯絡我們輸入區塊------- */
 
+.error {
+    color: red;
+}
+
 .ct_main {
     display: flex;
     flex-direction: column;
@@ -56,6 +60,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 textarea , .email {

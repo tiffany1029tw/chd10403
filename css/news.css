@@ -53,6 +53,7 @@ body {
 .sale_card img ,
 .kl_card img {
     width: 100%;
+    max-width: 508px;
 }
 
 .sale_card .main , 
@@ -74,7 +75,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1%;
+    gap: 2%;
     margin-bottom: 10%;
 }
 
@@ -92,6 +93,14 @@ body {
 .page_btn button:hover {
     background-color: rgba(78, 56, 27, 1);
     color: rgba(207, 191, 168, 1);
+}
+
+.btn_p1 button.active , 
+.btn_p2 button.active ,
+.btn_b_p1 button.active2 ,
+.btn_b_p2 button.active2 {
+    background-color: rgba(78, 56, 27, 1); 
+    color: #ffffff; 
 }
 
 /* ------手機版------ */

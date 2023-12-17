@@ -497,6 +497,16 @@ header {
     justify-content: end;
     margin-bottom: 20px;
     margin-right: 100px;
+    animation: shake 0.8s ease-in-out infinite;
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateY(0); 
+    }
+    50% {
+        transform: translateY(-8px); 
+    }
 }
 
 .btt a {

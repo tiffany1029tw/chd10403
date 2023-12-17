@@ -34,6 +34,8 @@
 
 .error {
     color: red;
+    font-size: 16px;
+    padding-top: 5px;
 }
 
 .ct_main {
@@ -69,7 +71,7 @@
     justify-content: center;
 }
 
-textarea , .email {
+textarea , #email {
     max-width: 600px;
     width: 100%;
     resize: none;
@@ -121,7 +123,7 @@ textarea {
         background-position: left bottom , right top  , left bottom , right top;
     }
 
-    textarea , .email {
+    textarea , #email {
         width: 80%;
     }
 }

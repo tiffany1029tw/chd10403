@@ -4,7 +4,7 @@
     background-image: url(../img/qa_bg4.png) , url(../img/qa_bg2.png) , url(../img/qa_bg5.png) , url(../img/qa_bg3.png);
     background-size: auto ;
     background-repeat: no-repeat;
-    background-position: top right , left bottom , bottom center , left center;
+    background-position: top right , left bottom , bottom center , left bottom;
 }
 
 .qa_top {
@@ -69,6 +69,11 @@
 }
 
 /* --------內容--------- */
+
+.qa_item .answer{
+    display: none;
+} 
+/* 初始狀態A隱藏 */
 
 .qa_container {
     width: 50%;
@@ -145,6 +150,11 @@
     border: 0;
     font-size: 16px;
     color: rgba(78, 56, 27, 1);
+}
+
+.qa_sidebar_m button:hover {
+    color: rgba(207, 191, 168, 1);
+    background-color: rgba(78, 56, 27, 1);
 }
 
 @media (width<1322px) {

@@ -31,19 +31,22 @@ let qty = document.getElementsByClassName("numberbox"); //數值
 window.addEventListener("load", init, false); 
 
 function changeprice() { //商品一小計
-    let num = $('count1').value;
-    let price = parseInt($('product-price1').textContent);
-    let total = num*price;
-    $('subtotal1').innerHTML = total;
-    
+    if ($('count1') != null) {
+        let num = $('count1').value;
+        let price = parseInt($('product-price1').textContent);
+        let total = num*price;
+        $('subtotal1').innerHTML = total;
+    }
 }
 window.addEventListener("load", changeprice, false); 
 
 function changeprice1() { //商品二小計
-    let num = $('count2').value;
-    let price = parseInt($('product-price2').textContent);
-    let total = num*price;
-    $('subtotal2').innerHTML=total;
+    if ($('count2') != null) {
+        let num = $('count2').value;
+        let price = parseInt($('product-price2').textContent);
+        let total = num*price;
+        $('subtotal2').innerHTML=total;
+    }
     
 }
 window.addEventListener("load", changeprice1, false);  
@@ -53,9 +56,6 @@ function sumprice() { //總計
     let price1Element = $('subtotal2');
     let totalPriceElement = $('total-price');
 
-    console.log(priceElement);
-    console.log(price1Element);
-    console.log(totalPriceElement);
 
     if(priceElement == null){ //刪除商品後=null無法加減
         priceElement = 0; //給值=0
@@ -71,6 +71,7 @@ function sumprice() { //總計
         let p1 = parseInt(priceElement.innerHTML) || 0;
         let p2 = parseInt(price1Element.innerHTML) || 0;
         let prices = p1 + p2;
+
         totalPriceElement.innerHTML = prices;
 
         if (prices >= 1000) {

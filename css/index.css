@@ -102,11 +102,29 @@ header {
     justify-content: center;
     align-items: center;
     gap: 10%;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .banner_act .car , .money {
     text-align: center;
     padding: 15px 0px;
+    display: inline-block;
+    margin-right: 20px;
+    animation: floatAnimation 2s ease-in-out infinite alternate; 
+}
+
+@keyframes floatAnimation {
+    0% , 100% {
+        transform: translateX(0); 
+        /* 原本的位置不動 */
+    }
+    33% {
+        transform: translateX(-20px); 
+    }
+    66% {
+        transform: translateX(20px); 
+    }
 }
 
 .banner_act img {

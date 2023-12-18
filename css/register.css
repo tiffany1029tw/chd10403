@@ -1,0 +1,163 @@
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.register_bg {
+    max-width: 1920px;
+    width: 100%;
+    background-image: url(../img/login2.png), url(../img/login1.png), url(../img/login4.png), url(../img/login3.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: left center , right top , right center , left bottom;
+}
+
+.register_title {
+    display: flex;
+    margin: 100px 0px 80px 0px;
+}
+
+.register_title .title{
+    position: relative
+}
+
+.register_title .title > p{
+    position: absolute;
+    font-size: 32px;
+    color: white;
+    top: 45%;
+    right: 40%;
+}
+
+/* ------------ */
+
+.register_main {
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.register {
+    margin: auto;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 50px 20px;
+    background-color: rgba(229, 219, 206, 1);
+    border-radius: 10px;
+}
+
+.register input {
+    border: none;
+}
+
+.register label{
+    font-size: 18px;
+    color: rgba(37, 25, 10, 1);
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.phone_msg input {
+    width: 185px;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.user_account input , 
+.new_psd input ,
+.new_psd_check input {
+    width: 280px;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 18px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.phone_msg button {
+    height: 40px;
+    border: 0;
+    background-color: rgba(37, 25, 10, 1);
+    font-size: 16px;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.submit_btn input {
+    width: 280px;
+    background-color: rgba(78, 56, 27, 1);
+    font-size: 20px;
+    color: white;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 30px;
+    margin: 10px 0px;
+}
+
+.submit_btn input:hover {
+    background-color: white;
+    color: rgba(78, 56, 27, 1);
+}
+
+.login p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: rgba(78, 56, 27, 1);
+    text-align: center;
+}
+
+.login_btn input {
+    width: 280px;
+    color: white;
+    font-size: 20px;
+    background-color: rgba(78, 56, 27, 0.5);
+    letter-spacing: 1px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 30px;
+}
+
+.login_btn input:hover {
+    color: rgba(78, 56, 27, 1);
+    background-color: white;
+}
+
+/* ---手機版---- */
+
+@media (max-width:768px) {
+
+    .login_bg {
+        background-image: url(../img/login1.png), url(../img/login3.png);
+        background-position: right top , left center;
+    }
+
+    .register_title {
+        margin: 60px 0px 50px 0px;
+    }
+    
+    .register_title .title{
+        margin: auto;
+    }
+    
+    .register_title .title > p{
+        font-size: 24px;
+    }
+
+    .register_title img {
+        width: 350px;
+    }
+
+    .register {
+        width: 85%;
+    }
+
+}

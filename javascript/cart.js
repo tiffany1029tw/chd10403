@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const priceElements = document.querySelectorAll('.price1');
     const totalElement = document.querySelector('.total_price');
     const cancelButtons = document.querySelectorAll('.cancel_btn button');
-    const selectAllTextElement = document.querySelector('.col.all p');
 
     function updateTotal() {
         let totalPrice = 0;
@@ -27,6 +26,16 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function cancelButton(index) {
+        const removedItem = checkboxes[index + 1].closest('.dtls');
+        const isChecked = checkboxes[index + 1].checked;
+        //刪除被選取的商品時，選取框的狀態會先手動設為沒被選到，然後再更新合計總金額
+        removedItem.remove();
+
+        if (isChecked) {
+            checkboxes[index + 1].checked = false; 
+            // 手動將選取框狀態設為未選取
+        updateTotal();
+    }
         checkboxes[index + 1].closest('.dtls').remove();
         updateTotal();
     }
@@ -39,8 +48,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
         updateTotal();
-        const selectAllText = isChecked ? "取消全選" : "全選";
-        selectAllTextElement.textContent = selectAllText;
     }
 
     checkboxes.forEach((checkbox, index) => {
@@ -55,6 +62,4 @@ document.addEventListener("DOMContentLoaded", function () {
         button.addEventListener('click', () => cancelButton(index));
     });
 
-    checkboxes[0].addEventListener('change', selectAllCheckboxChange);
-    selectAllTextElement.textContent = "全選";
 });

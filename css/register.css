@@ -91,6 +91,11 @@ body {
     text-align: center;
 }
 
+.phone_msg button:hover {
+    color: rgba(37, 25, 10, 1);
+    background-color: white;
+}
+
 .submit_btn input {
     width: 280px;
     background-color: rgba(78, 56, 27, 1);

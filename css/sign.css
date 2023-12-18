@@ -2,7 +2,7 @@ body {
     font-family: 'Noto Sans TC', sans-serif;
 }
 
-.register_bg {
+.signin_bg {
     max-width: 1920px;
     width: 100%;
     background-image: url(../img/login2.png), url(../img/login1.png), url(../img/login4.png), url(../img/login3.png);
@@ -11,16 +11,16 @@ body {
     background-position: left center , right top , right center , left bottom;
 }
 
-.register_title {
+.signin_title {
     display: flex;
     margin: 100px 0px 80px 0px;
 }
 
-.register_title .title{
+.signin_title .title{
     position: relative
 }
 
-.register_title .title > p{
+.signin_title .title > p{
     position: absolute;
     font-size: 32px;
     color: white;
@@ -30,12 +30,12 @@ body {
 
 /* ------------ */
 
-.register_main {
+.signin_main {
     width: 100%;
     margin-bottom: 100px;
 }
 
-.register {
+.signin {
     margin: auto;
     width: 40%;
     display: flex;
@@ -48,11 +48,11 @@ body {
     border-radius: 10px;
 }
 
-.register input {
+.signin input {
     border: none;
 }
 
-.register label{
+.signin label{
     font-size: 18px;
     color: rgba(37, 25, 10, 1);
     text-align: center;
@@ -145,23 +145,23 @@ body {
         background-position: right top , left center;
     }
 
-    .register_title {
+    .signin_title {
         margin: 60px 0px 50px 0px;
     }
     
-    .register_title .title{
+    .signin_title .title{
         margin: auto;
     }
     
-    .register_title .title > p{
+    .signin_title .title > p{
         font-size: 24px;
     }
 
-    .register_title img {
+    .signin_title img {
         width: 350px;
     }
 
-    .register {
+    .signin {
         width: 85%;
     }
 

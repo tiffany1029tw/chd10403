@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/header_footer_rwd.css">
-    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/sign.css">
 
 </head>
 
@@ -86,9 +86,9 @@
 
 <!-- ---------背景與標題-------- -->
 
-<div class="register_bg">
+<div class="signin_bg">
 
-    <div class="register_title">
+    <div class="signin_title">
         <div class="title">
             <p>註冊會員</p>
             <img src="img/main_title.png" alt="註冊標題底色">
@@ -97,8 +97,8 @@
 
 <!-- ----------主要區塊--------- -->
 
-<div class="register_main">
-    <div class="register">
+<div class="signin_main">
+    <div class="signin">
         <div class="user_account">
             <label for="user_account"></label>
             <input type="text" name="user_account" placeholder="請輸入您的手機號碼" id="user_account">
@@ -173,6 +173,16 @@
     </div>
 </footer>
 </div>
+
+<script>
+    var logInBtn = document.getElementById("login_btn"); // 抓到登入按鈕元素
+
+    // 點按後的功能
+    logInBtn.addEventListener("click", function() {
+        window.location.href = "login.html"; // 將瀏覽器導向到登入的頁面
+    });
+</script>
+
 </body>
 
 </html>

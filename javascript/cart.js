@@ -2,15 +2,14 @@ function $(id){
     return document.getElementById(id);
 } 
 
-//order---> +-盒子
-function init(){
+function init(){ // 按鈕加減數量
 let btnMinus = document.getElementsByClassName("minus");
 let btnPlus = document.getElementsByClassName("plus");
-    let qty = document.getElementsByClassName("numberbox");
-    for(let i=0 ; i<btnMinus.length;i++){
-        //--------------------減
-        btnMinus[i].onclick = function(e){
-            let qtyobj=qty[i];
+let qty = document.getElementsByClassName("numberbox"); //數值
+
+    for(let i=0 ; i < btnMinus.length; i++){
+        btnMinus[i].onclick = function(){
+            let qtyobj = qty[i];
             let quantity = parseInt(qtyobj.value);
             if(quantity>0){
                 qtyobj.value = quantity -1
@@ -19,8 +18,7 @@ let btnPlus = document.getElementsByClassName("plus");
                 sumprice();
             }
         }
-        //--------------------加
-        btnPlus[i].onclick = function(e){
+        btnPlus[i].onclick = function(){
             let qtyobj=qty[i];
             let quantity = parseInt(qtyobj.value);
             qtyobj.value = quantity +1
@@ -29,41 +27,28 @@ let btnPlus = document.getElementsByClassName("plus");
             sumprice();
         }
     }
-    console.log(1);
-    
 } 
 window.addEventListener("load", init, false); 
 
-//改變小計的價格
-function changeprice() {
-    let num=$('count1').value;
-    let price=parseInt($('product-price1').textContent);
-    let total=num*price;
-    $('subtotal1').innerHTML=total;
-    // if (total >= 1000) {
-    //     $('price').innerHTML = total.toLocaleString();
-    // } else {
-    //     $('price').innerHTML = total;
-    // }
+function changeprice() { //商品一小計
+    let num = $('count1').value;
+    let price = parseInt($('product-price1').textContent);
+    let total = num*price;
+    $('subtotal1').innerHTML = total;
     
 }
 window.addEventListener("load", changeprice, false); 
-function changeprice1() {
-    let num=$('count2').value;
-    let price=parseInt($('product-price2').textContent);
-    let total=num*price;
+
+function changeprice1() { //商品二小計
+    let num = $('count2').value;
+    let price = parseInt($('product-price2').textContent);
+    let total = num*price;
     $('subtotal2').innerHTML=total;
-    // if (total >= 1000) {
-    //     $('price1').innerHTML = total.toLocaleString();
-    // } else {
-    //     $('price1').innerHTML = total;
-    // }
     
 }
 window.addEventListener("load", changeprice1, false);  
 
-//總計
-function sumprice() {
+function sumprice() { //總計
     let priceElement = $('subtotal1');
     let price1Element = $('subtotal2');
     let totalPriceElement = $('total-price');
@@ -72,8 +57,8 @@ function sumprice() {
     console.log(price1Element);
     console.log(totalPriceElement);
 
-    if(priceElement == null){
-        priceElement = 0;
+    if(priceElement == null){ //刪除商品後=null無法加減
+        priceElement = 0; //給值=0
     }
 
     if(price1Element == null){
@@ -98,19 +83,14 @@ function sumprice() {
 
 window.addEventListener("load", sumprice, false);  
 
-//刪除
+//刪除按鈕
+let deleteButtons = document.querySelectorAll('.delete'); //抓刪除按鈕元素
 
-// 獲取所有帶有刪除事件的元素
-let deleteButtons = document.querySelectorAll('.delete');
-
-// 對每個按鈕添加點擊事件
-deleteButtons.forEach(function(button) {
+deleteButtons.forEach(function(button) { // 按鈕點擊事件
     button.addEventListener('click', function() {
-        // 獲取點擊按鈕的父元素（整列）
-        let row = this.closest('.dtls');
+        let row = this.closest('.dtls'); //抓到父元素
 
-        // 確認父元素存在，然後刪除
-        if (row) {
+        if (row) { // 確認存在再刪除
             row.remove();
             sumprice();  // 刪除後重新計算總價
         }

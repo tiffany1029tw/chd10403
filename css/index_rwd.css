@@ -53,6 +53,10 @@
     .hs_img_txt_m {
         display: none;
     }
+
+    .cutecat_m {
+        display: none;
+    }
 }
 
 @media (width > 1024px) {
@@ -286,6 +290,28 @@
         font-size: 12px;
         margin-top: 15px;
         text-align: center;
+    }
+
+    .cutecat {
+        display: none;
+    }
+
+    .banner_act {
+        justify-content: center;
+        gap: 3%;
+    }
+    
+    @keyframes floatAnimation {
+        0% , 100% {
+            transform: translateX(0); 
+            /* 原本的位置不動 */
+        }
+        50% {
+            transform: translateX(-10px); 
+        }
+        75% {
+            transform: translateX(10px); 
+        }
     }
 
 }

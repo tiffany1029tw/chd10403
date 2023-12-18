@@ -99,18 +99,17 @@ header {
 .banner_act {
     background-color: rgba(163, 153, 128, 1);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 10%;
+    gap: 6%;
     overflow: hidden;
     white-space: nowrap;
 }
 
 .banner_act .car , .money {
     text-align: center;
-    padding: 15px 0px;
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 5px;
     animation: floatAnimation 2s ease-in-out infinite alternate; 
 }
 
@@ -119,15 +118,16 @@ header {
         transform: translateX(0); 
         /* 原本的位置不動 */
     }
-    33% {
+    50% {
         transform: translateX(-20px); 
     }
-    66% {
+    75% {
         transform: translateX(20px); 
     }
 }
 
-.banner_act img {
+.banner_act .car img ,
+.banner_act .money img {
     padding-bottom: 15px;
 }
 

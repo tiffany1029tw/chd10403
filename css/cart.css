@@ -137,7 +137,7 @@ body {
     letter-spacing: 1px;
 }
 
-.dtls select {
+/* .dtls select {
     width: 120px;
     height: 50px;
     font-size: 18px;
@@ -147,6 +147,24 @@ body {
     text-align: center;
     color:rgba(37, 25, 10, 1);
     background-color: rgba(255, 255, 255, 0.5);
+} */
+
+#count1 , #count2 {
+    width: 50px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.count1 button ,
+.count2 button {
+    border: none;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    background-color:rgba(163, 138, 98, 1);
+    color: white;
+    border-radius: 10px;
 }
 
 .dtls .pd_info {
@@ -541,10 +559,22 @@ body {
         font-size: 12px;
     }
 
-    .dtls select {
+    /* .dtls select {
         width: 50px;
         height: 20px;
         font-size: 12px;
+    } */
+
+    #count1 , #count2 {
+        font-size: 15px;
+    }
+    
+    .count1 button ,
+    .count2 button {
+        width: 18px;
+        height: 18px;
+        font-size: 12px;
+        border-radius: 5px;
     }
 
     .dtls .cancel {

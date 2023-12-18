@@ -85,7 +85,7 @@ body {
     height: 40px;
     border: 0;
     background-color: rgba(37, 25, 10, 1);
-    font-size: 16px;
+    font-size: 18px;
     color: white;
     border-radius: 10px;
     text-align: center;
@@ -163,6 +163,10 @@ body {
 
     .signin {
         width: 85%;
+    }
+
+    .phone_msg button {
+        font-size: 13px;
     }
 
 }

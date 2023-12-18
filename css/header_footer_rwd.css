@@ -61,7 +61,7 @@
     }
 
     header {
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
         position: relative;
         gap: 10%;
@@ -87,7 +87,7 @@
 
 @media ( max-width:768px ) {
     header {
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         gap: 5%;
     }

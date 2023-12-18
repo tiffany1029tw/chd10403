@@ -87,7 +87,7 @@
     }
 
     header {
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
         position: relative;
         gap: 10%;
@@ -129,7 +129,7 @@
     }
 
     header {
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         gap: 10%;
     }

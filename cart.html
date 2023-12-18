@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/header_footer_rwd.css">
     <link rel="stylesheet" href="css/cart.css">
 
-    <script src="javascript/cart.js"></script>
+    
 
 </head>
 
@@ -126,9 +126,9 @@
 
     <div class="container cart_main">
         <div class="row row-cols-6 row-cols-md-2 row-cols-lg-3 row-cols-xl-6 items">
-            <div class="col all">
+            <!-- <div class="col all">
                 <p>全選</p>
-            </div>
+            </div> -->
             <div class="col pd_name">
                 <p>商品資訊</p>
             </div>
@@ -149,10 +149,10 @@
 <!-- -----第一個商品---- -->
 
         <div class="row row-cols-6 row-cols-md-2 row-cols-lg-3 row-cols-xl-6 dtls">
-            <div class="col checkbox">
+            <!-- <div class="col checkbox">
                 <input type="checkbox" name="checkbox1" id="checkbox1">
                 <label for="checkbox1"></label>
-            </div>
+            </div> -->
             <div class="col pd_info">
                 <div class="pd_pic">
                     <img src="img/cart_pdpic.png" alt="商品圖">
@@ -161,27 +161,29 @@
             </div>
             <div class="col count1">
                 <button class="minus" id="minus1">-</button>
-                <span id="count1">1</span>
+                <input type="text" class="numberbox" id="count1" value="1"></input>
                 <button class="plus" id="plus1">+</button>
             </div>
+            <!-- 單價 -->
             <div class="col price1">
-                <p>NT$65</p>
+                NT$<span id="product-price1">65</span>
             </div>
-            <div class="col total1">
-                <p>NT$65</p>
+            <!-- 小計 -->
+            <div class="col total1" id="total1">
+                NT$<span id="subtotal1"></span>
             </div>
             <div class="col cancel_btn">
-                <button class="cancel1" value="">X</button>
+                <button class="cancel1 delete" value="">X</button>
             </div>
         </div>
 
 <!-- ----第二個商品---- -->
 
         <div class="row row-cols-6 row-cols-md-2 row-cols-lg-3 row-cols-xl-6 dtls">
-            <div class="col checkbox">
+            <!-- <div class="col checkbox">
                 <input type="checkbox" name="checkbox2" id="checkbox2">
                 <label for="checkbox2"></label>
-            </div>
+            </div> -->
             <div class="col pd_info">
                 <div class="pd_pic">
                     <img src="img/cart_pdpic.png" alt="商品圖">
@@ -190,17 +192,21 @@
             </div>
             <div class="col count2">
                 <button class="minus" id="minus2">-</button>
-                <span id="count2">1</span>
+                <input type="text" class="numberbox" id="count2" value="1"></input>
                 <button class="plus" id="plus2">+</button>
             </div>
+
+            <!-- 單價 -->
             <div class="col price2">
-                <p>NT$65</p>
+                NT$<span id="product-price2">65</span>
             </div>
-            <div class="col total2">
-                <p>NT$65</p>
+
+            <!-- 小計 -->
+            <div class="col total2" id="total2">
+                NT$<span id="subtotal2"></span>
             </div>
             <div class="col cancel_btn">
-                <button class="cancel2" value="">X</button>
+                <button class="cancel2 delete" value="">X</button>
             </div>
         </div>
 
@@ -211,8 +217,8 @@
                 <div class="total_txt">
                     <p>合計</p>
                 </div>
-                <div class="total_price">
-                    <p>NT$130</p>
+                <div class="total_price" id="total2">
+                    NT$<span id="total-price"></span>
                 </div>
             </div>
         </div>
@@ -395,6 +401,8 @@
         <p>本網站為緯育TibaMe前端工程師班第88期學員專題作品，<br>本平台僅供學習、展示用。</p>
     </div>
 </footer>
+
+<script src="javascript/cart.js"></script>
 
 </body>
 

@@ -522,6 +522,7 @@ body {
 
     .items {
         padding-bottom: 20px;
+        justify-content: space-evenly;
     }
 
     .items p {
@@ -530,6 +531,7 @@ body {
 
     .cart_main .dtls {
         padding: 20px 0px;
+        justify-content: space-evenly;
     }
 
     .dtls input[type="checkbox"] + label::before{
@@ -550,13 +552,8 @@ body {
         font-size: 12px;
     }
 
-    /* .dtls select {
-        width: 50px;
-        height: 20px;
-        font-size: 12px;
-    } */
-
     #count1 , #count2 {
+        width: 15px;
         font-size: 15px;
     }
     

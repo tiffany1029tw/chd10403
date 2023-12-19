@@ -160,8 +160,11 @@ body {
     height: 50px;
     border-radius: 50%;
     background-color: rgba(207, 191, 168, 1);
+    color: rgba(78, 56, 27, 1);
+    font-size: 20px;
+    text-align: center;
 }
-
+/* 
 .page_btn button a {
     display: block;
     width: 100%;
@@ -170,10 +173,9 @@ body {
     color: rgba(78, 56, 27, 1);
     font-size: 20px;
     text-align: center;
-}
+} */
 
-.page_btn button:hover ,
-.page_btn button:hover a {
+.page_btn button:hover {
     background-color: rgba(78, 56, 27, 1);
     color: rgba(207, 191, 168, 1);
 }

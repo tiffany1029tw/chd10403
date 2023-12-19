@@ -101,6 +101,10 @@
     margin: 8px 0px;
 }
 
+.question {
+    cursor: pointer;
+}
+
 .answer {
     line-height: 1.5;
 }
@@ -117,6 +121,7 @@
     text-align: center;
     color: rgba(207, 191, 168, 1);
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .answer section {

@@ -137,6 +137,10 @@ body {
     letter-spacing: 1px;
 }
 
+.dtls span {
+    font-size: 20px;
+}
+
 #count1 , #count2 {
     width: 50px;
     font-size: 18px;
@@ -550,6 +554,10 @@ body {
 
     .dtls p {
         font-size: 12px;
+    }
+
+    .dtls span {
+        font-size: 15px;
     }
 
     #count1 , #count2 {

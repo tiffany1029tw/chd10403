@@ -48,7 +48,7 @@ window.onload = function(){
 
     function changeContent(index) { //內容更換
         img.src = imgArr[index];
-        topContainer.innerText = "Top" + (index + 1) ;
+        topContainer.innerText = "Top" + (index + 1) ; //Top123
         txt.innerHTML = `<h1>${contentArr[index].h1}</h1>
         <p class="hs_pdtext">${contentArr[index].p}</p><br>
         <p class="hs_price">${contentArr[index].price}</p>`;

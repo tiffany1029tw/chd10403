@@ -3,14 +3,14 @@ function $(id){
 } 
 
 function init(){ // 按鈕加減數量
-let btnMinus = document.getElementsByClassName("minus");
-let btnPlus = document.getElementsByClassName("plus");
+let btnMinus = document.getElementsByClassName("minus"); //減
+let btnPlus = document.getElementsByClassName("plus"); //加
 let qty = document.getElementsByClassName("numberbox"); //數值
 
     for(let i=0 ; i < btnMinus.length; i++){
-        btnMinus[i].onclick = function(){
-            let qtyobj = qty[i];
-            let quantity = parseInt(qtyobj.value);
+        btnMinus[i].onclick = function(){ //點按減的按鈕
+            let qtyobj = qty[i]; 
+            let quantity = parseInt(qtyobj.value); //抓值 變成整數
             if(quantity>0){
                 qtyobj.value = quantity -1
                 changeprice();
@@ -18,7 +18,8 @@ let qty = document.getElementsByClassName("numberbox"); //數值
                 sumprice();
             }
         }
-        btnPlus[i].onclick = function(){
+
+        btnPlus[i].onclick = function(){ //點按加的按鈕
             let qtyobj=qty[i];
             let quantity = parseInt(qtyobj.value);
             qtyobj.value = quantity +1

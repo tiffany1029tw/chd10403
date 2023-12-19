@@ -60,7 +60,7 @@ body {
 }
 
 .phone_msg input {
-    width: 185px;
+    width: 175px;
     background-color: rgba(255, 255, 255, 0.5);
     font-size: 18px;
     letter-spacing: 1px;
@@ -167,6 +167,10 @@ body {
 
     .phone_msg button {
         font-size: 13px;
+    }
+
+    .phone_msg input {
+        width: 200px;
     }
 
 }

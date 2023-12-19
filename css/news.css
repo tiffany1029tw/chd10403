@@ -86,7 +86,7 @@ body {
     border-radius: 50%;
     background-color: rgba(207, 191, 168, 1);
     color: rgba(78, 56, 27, 1);
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
 }
 
@@ -144,9 +144,7 @@ body {
     .page_btn button {
         width: 30px;
         height: 30px;
+        font-size: 12px;
     }
 
-    .page_btn button a {
-        font-size: 15px;
-    }
 }

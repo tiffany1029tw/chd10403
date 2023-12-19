@@ -355,6 +355,10 @@ h1 {
     .more_m {
         display: none;
     }
+
+    .big_img_m , .small_img_m {
+        display: none;
+    }
 }
 
 @media (max-width:768px) {
@@ -373,12 +377,20 @@ h1 {
         padding-top: 10px;
     }
 
-    .small_img {
+    .big_img , .small_img {
+        display: none;
+    }
+
+    .big_img_m {
+        width: 100%;
+    }
+
+    .small_img_m {
         width: 100%;
         padding-top: 5px;
     }
 
-    .small_img img {
+    .small_img_m img {
         width: 23.5%;
         padding: 0;
     }

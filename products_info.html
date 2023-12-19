@@ -100,14 +100,23 @@
 
         <div class="top_img">
             <div class="big_img">
-                <img src="img/large_can.png" alt="商品大圖">
+                <img src="img/large_can.png" id="large" alt="商品大圖" style="width:486px; height:450px;">
+            </div>
+            <div class="big_img_m">
+                <img src="img/large_can.png" id="large_m" alt="商品大圖" style="width:250px; height:250px;">
             </div>
 
             <div class="small_img">
-                <img src="img/small (1).png" alt="商品小圖一">
-                <img src="img/small (2).png" alt="商品小圖二">
-                <img src="img/small (3).png" alt="商品小圖三">
-                <img src="img/small (3).png" alt="商品小圖四">
+                <img src="img/large1.png" class="small" alt="商品小圖一" style="width:110px; height:110px;">
+                <img src="img/large2.png" class="small" alt="商品小圖二" style="width:110px; height:110px;">
+                <img src="img/large3.png" class="small" alt="商品小圖三" style="width:110px; height:110px;">
+                <img src="img/large3.png" class="small" alt="商品小圖四" style="width:110px; height:110px;">
+            </div>
+            <div class="small_img_m">
+                <img src="img/large1.png" class="small" alt="商品小圖一" style="width:55px; height:55px;">
+                <img src="img/large2.png" class="small" alt="商品小圖二" style="width:55px; height:55px;">
+                <img src="img/large3.png" class="small" alt="商品小圖三" style="width:55px; height:55px;">
+                <img src="img/large3.png" class="small" alt="商品小圖四" style="width:55px; height:55px;">
             </div>
         </div>
 
@@ -330,6 +339,24 @@
         <p>本網站為緯育TibaMe前端工程師班第88期學員專題作品，<br>本平台僅供學習、展示用。</p>
     </div>
 </footer>
+
+<script>
+
+	function showLarge(e){
+        let object=e.target;
+        document.getElementById("large").src=object.src;
+        document.getElementById("large_m").src=object.src;
+	
+}
+	function init(){
+        let smalls=document.getElementsByClassName("small");
+        for(let i=0 ; i<smalls.length ; i++){
+        smalls[i].onclick=showLarge;
+        }
+	
+}
+	window.addEventListener("load", init, false); //網頁下載時就執行init
+	</script>
 
 </body>
 

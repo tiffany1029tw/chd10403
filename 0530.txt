@@ -1,0 +1,27 @@
+Parameter id: <%= request.getParameter("id") %>
+Parameter phone: <%= request.getParameter("phone") %>
+Parameter name: <%= request.getParameter("name") %>
+Parameter address: <%= request.getParameter("address") %>
+Parameter note: <%= request.getParameter("note") %>
+
+
+request.setAttribute( "ValueA ",a); 
+request.getRequestDispatcher( "網址/jsp頁面").forward(request,response); 
+
+<%
+
+String id =(String)request.getAttribute("id");
+String phone =(String)request.getAttribute("phone");
+String name =(String)request.getAttribute("name");
+String address =(String)request.getAttribute("address");
+String note =(String)request.getAttribute("note");
+
+%>
+
+在 servlet裡使用 response.sendRedirect(url) 方法
+response.sendRedirect("index.jsp")
+
+String url = "index.jsp";
+ServletContext sc = getServletContext();
+RequestDispatcher rd = sc.getRequestDispatcher(url);
+rd.forward(req, res);

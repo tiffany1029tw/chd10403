@@ -16,3 +16,9 @@ VALUES ('A111111111','0922222222','王太太','新北市','你好');
 
 INSERT INTO dbo.table_3
 VALUES ('F228347111','0922666666','簡弟弟','汐止','hhh');
+
+INSERT INTO dbo.table_3
+VALUES ('A123456789','0988888888','河馬怪','台北市內湖區','hippo');
+
+INSERT INTO dbo.table_3
+VALUES ('A102231988','0933333333','數比狗','苗栗縣','uuuuuu');

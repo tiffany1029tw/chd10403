@@ -1,0 +1,50 @@
+Utils_Checkmarx
+
+package com.ubot.lis.utils1;
+
+public class Utils_Checkmarx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	public static String encodeStr(String value) {
+		String enStr = "" ;
+		enStr = value ;
+		
+		return enStr ;		
+	}
+	public static String encodeFormClient(String value) {
+		String enStr = "" ;
+		enStr = value ;
+		
+		return enStr ;		
+	}
+	public static byte[] encodeByte(byte[] value) {
+		byte[] enStr;
+		
+		enStr = value ;
+		
+		return enStr ;		
+	}	
+	public static String encodeFormSQL(String value) {
+		String enStr = "" ;
+		enStr = value ;
+		
+		return enStr ;		
+	}
+
+	public static int encodeFormSQL(int value) {
+		int enStr = 0;
+		enStr = value ;
+
+		return enStr ;
+	}
+	public static String encodeFormDB(String value) {
+		String enStr = "" ;
+		enStr = value ;
+		
+		return enStr ;		
+	}
+
+}

@@ -1,0 +1,140 @@
+(UserListDAO)
+
+package com.ubot.lis.dbtraining;
+
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import com.ubot.lis.db1.DbUtil_JNDI;
+import com.ubot.lis.db1.DbUtiltools;
+import com.ubot.lis.utils1.Utils_Checkmarx;
+
+public class UserListDAO extends DbUtiltools {
+	private static UserListVO getVO(ResultSet rs) {
+		UserListVO vo = new UserListVO();
+		try {
+			String i1 = "";
+			String i2 = "";
+			String i3 = "";
+			String i4 = "";
+			String i5 = "";
+			
+			if (isExistColumn(rs, "USERID"))		i1 = Utils_Checkmarx.encodeFormSQL(rs.getString("USERID"));
+			if (isExistColumn(rs, "USERNAME"))      i2 = Utils_Checkmarx.encodeFormSQL(rs.getString("USERNAME"));
+			if (isExistColumn(rs, "NUMBER"))		i3 = Utils_Checkmarx.encodeFormSQL(rs.getString("NUMBER"));
+			if (isExistColumn(rs, "ADDRESS"))		i4 = Utils_Checkmarx.encodeFormSQL(rs.getString("ADDRESS"));
+			if (isExistColumn(rs, "MEMO"))			i5 = Utils_Checkmarx.encodeFormSQL(rs.getString("MEMO"));
+
+			vo.setUserid(i1);
+			vo.setUsername(i2);
+			vo.setNumber(i3);
+			vo.setAddress(i4);
+			vo.setMemo(i5);
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return vo;
+	}
+	
+	public UserListVO selectUserList(String userno) {
+		
+		DbUtil_JNDI du = new DbUtil_JNDI();
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		UserListVO vo = new UserListVO();
+		
+		try {
+			pstmt = du.conn.prepareStatement("SELECT * FROM USERLIST WHERE USERID=?");
+			pstmt.setString(1, userno);
+			
+			rs = pstmt.executeQuery();
+			
+			while(rs.next()) {
+                vo = getVO(rs);
+            }
+            
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			du.closeQuietly(rs);
+            du.closeQuietly(pstmt);
+            du.closeQuietly();
+		}
+		return vo;
+	}
+	
+	public int insert(UserListVO UserListVO) {
+		
+		DbUtil_JNDI du = new DbUtil_JNDI();
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		
+		int insertCount = 0;
+
+		try {
+			pstmt = du.conn.prepareStatement("INSERT INTO USERLIST(USERID,USERNAME,NUMBER,ADDRESS,MEMO)VALUES(?,?,?,?,?)");
+			pstmt.setString(1, UserListVO.getUserid());
+			pstmt.setString(2, UserListVO.getUsername());
+			pstmt.setString(3, UserListVO.getNumber());
+			pstmt.setString(4, UserListVO.getAddress());
+			pstmt.setString(5, UserListVO.getMemo());
+		
+			insertCount = pstmt.executeUpdate();
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+		finally {
+			du.closeQuietly(rs);
+            du.closeQuietly(pstmt);
+            du.closeQuietly();
+		}
+
+		return insertCount;
+	}
+}
+
+---------------------------
+
+(UserListVO)
+
+package com.ubot.lis.dbtraining;
+
+public class UserListVO {
+	private String username;
+	private String userid;
+	private String number;
+	private String address;
+	private String memo;
+	
+	public String getUsername() {
+		return username;
+	}
+	public void setUsername(String username) {
+		this.username = username;
+	}
+	public String getUserid() {
+		return userid;
+	}
+	public void setUserid(String userid) {
+		this.userid = userid;
+	}
+	public String getNumber() {
+		return number;
+	}
+	public void setNumber(String number) {
+		this.number = number;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	public String getMemo() {
+		return memo;
+	}
+	public void setMemo(String memo) {
+		this.memo = memo;
+	}
+}
